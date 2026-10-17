@@ -1,0 +1,136 @@
+{
+ "surum": "2026.10.2",
+ "yayin": "2026-10-17",
+ "vergi": {
+  "2024": {
+   "sgk_isci_orani": 0.15,
+   "sgk_tavan_kati": 7.5,
+   "damga_vergisi_orani": 0.00759,
+   "asgari_ucret_istisnasi": 1,
+   "dilimler": [
+    {
+     "sira": 1,
+     "ust_sinir": 110000.0,
+     "oran": 0.15
+    },
+    {
+     "sira": 2,
+     "ust_sinir": 230000.0,
+     "oran": 0.2
+    },
+    {
+     "sira": 3,
+     "ust_sinir": 870000.0,
+     "oran": 0.27
+    },
+    {
+     "sira": 4,
+     "ust_sinir": 3000000.0,
+     "oran": 0.35
+    },
+    {
+     "sira": 5,
+     "ust_sinir": null,
+     "oran": 0.4
+    }
+   ]
+  },
+  "2025": {
+   "sgk_isci_orani": 0.15,
+   "sgk_tavan_kati": 7.5,
+   "damga_vergisi_orani": 0.00759,
+   "asgari_ucret_istisnasi": 1,
+   "dilimler": [
+    {
+     "sira": 1,
+     "ust_sinir": 158000.0,
+     "oran": 0.15
+    },
+    {
+     "sira": 2,
+     "ust_sinir": 330000.0,
+     "oran": 0.2
+    },
+    {
+     "sira": 3,
+     "ust_sinir": 1200000.0,
+     "oran": 0.27
+    },
+    {
+     "sira": 4,
+     "ust_sinir": 4300000.0,
+     "oran": 0.35
+    },
+    {
+     "sira": 5,
+     "ust_sinir": null,
+     "oran": 0.4
+    }
+   ]
+  },
+  "2026": {
+   "sgk_isci_orani": 0.15,
+   "sgk_tavan_kati": 9.0,
+   "damga_vergisi_orani": 0.00759,
+   "asgari_ucret_istisnasi": 1,
+   "dilimler": [
+    {
+     "sira": 1,
+     "ust_sinir": 190000.0,
+     "oran": 0.15
+    },
+    {
+     "sira": 2,
+     "ust_sinir": 400000.0,
+     "oran": 0.2
+    },
+    {
+     "sira": 3,
+     "ust_sinir": 1500000.0,
+     "oran": 0.27
+    },
+    {
+     "sira": 4,
+     "ust_sinir": 5300000.0,
+     "oran": 0.35
+    },
+    {
+     "sira": 5,
+     "ust_sinir": null,
+     "oran": 0.4
+    }
+   ]
+  }
+ },
+ "asgari_ucret": {
+  "2024": 20002.5,
+  "2025": 26005.5,
+  "2026": 33030.0
+ },
+ "kidem_tavani": [
+  [
+   "2024-01-01",
+   35058.58
+  ],
+  [
+   "2024-07-01",
+   41828.42
+  ],
+  [
+   "2025-01-01",
+   46655.43
+  ],
+  [
+   "2025-07-01",
+   53919.68
+  ],
+  [
+   "2026-01-01",
+   64948.77
+  ],
+  [
+   "2026-07-01",
+   73729.87
+  ]
+ ]
+}
