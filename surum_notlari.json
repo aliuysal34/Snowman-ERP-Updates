@@ -1,5 +1,38 @@
 [
  {
+  "surum": "1.1.22",
+  "tarih": "2026-10-19",
+  "maddeler": [
+   {
+    "baslik": "Ana bilgisayar kendini günceller",
+    "tur": "onemli",
+    "kitle": "ust",
+    "aciklama": "Ağda çalışan firmalarda ana bilgisayar (sunucu) yeni sürümü kendisi indirir, imzasını doğrular ve gece (varsayılan 03:00-05:00, kimse bağlı değilken) kurar; program penceresi açık olmasa da olur. Ana bilgisayarda program penceresi açıksa kapanınca kurulur. Kurulunca ya da kurulamazsa Yönetici'ye bildirim gelir.",
+    "nasil": "Ana bilgisayarda Sistem › Ağ Ayarları'ndan açıp kapatabilir, saatini değiştirebilirsiniz. Hemen kurmak için saatin yanındaki simgeye sağ tıklayıp 'Güncellemeyi Denetle ve Kur'.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Ağdaki bilgisayarlar ana bilgisayarı takip eder",
+    "tur": "onemli",
+    "kitle": "hepsi",
+    "aciklama": "Ağdaki bilgisayar artık ana bilgisayardan önce güncellenmez (önceden önce güncellenen bilgisayar ana bilgisayara bağlanamıyordu). Ana bilgisayar yeni sürüme geçince ağdaki bilgisayar açılışta ya da çalışırken bunu görür ve tek tıkla aynı sürüme güncellenir.",
+    "nasil": "Yönetici beklemek istemezse ağdaki bilgisayarda Sistem › Güncelleme › 'Ana Bilgisayarı Şimdi Güncelle'.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Ana bilgisayarda güncelleme artık takılmaz",
+    "tur": "iyilestirme",
+    "kitle": "ust",
+    "aciklama": "Ana bilgisayarda güncelleme kurulurken arka plandaki sunucu önce kendiliğinden durdurulur; önceden sunucu program dosyasını açık tuttuğu için güncelleme bir dakika bekleyip 'kurulamadı' diyebiliyordu.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   }
+  ]
+ },
+ {
   "surum": "1.1.21",
   "tarih": "2026-10-19",
   "maddeler": [
