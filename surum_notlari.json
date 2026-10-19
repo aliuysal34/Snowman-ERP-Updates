@@ -1,5 +1,146 @@
 [
  {
+  "surum": "1.1.23",
+  "tarih": "2026-10-19",
+  "maddeler": [
+   {
+    "baslik": "Ağdaki bilgisayarlar güncellemeyi ana bilgisayardan alır",
+    "tur": "onemli",
+    "kitle": "hepsi",
+    "aciklama": "Ağda çalışan firmalarda güncellemenin tek kaynağı ana bilgisayar oldu. Ana bilgisayar yeni sürümü indirip doğrular; ağdaki bilgisayarlar açılışta ana bilgisayarın sürümünü görür, güncellemeyi internete çıkmadan ondan alır, imzasını kendisi de doğrular, kurar ve yeniden açılır (yaklaşık bir dakika, soru sorulmaz). Ağdaki bilgisayar artık hiçbir zaman ana bilgisayarın önüne geçip bağlanamaz hale gelmez.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Güncelleme çalışmayı kesmez",
+    "tur": "iyilestirme",
+    "kitle": "ust",
+    "aciklama": "Ana bilgisayar yeni sürümü gündüz sessizce indirir ama kurmaz; gece (varsayılan 03:00-05:00) kimse bağlı değilken kurar. Gece kapalı kalırsa sabah açılışta, kimse bağlanmadan kurar. Ana bilgisayarda program penceresi açıksa 'Şimdi Kur / 1 Saat Sonra' diye sorar.",
+    "nasil": "Saat ve açma-kapama: ana bilgisayarda Sistem › Ağ Ayarları.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Meslek kodu ve öğrenim durumu bildirgeden gelir",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "SGK'dan çekilen işe giriş bildirgesindeki meslek kodu (ör. 7533.02) ve öğrenim durumu, personel kartında boşsa kendiliğinden yazılır; daha önce inmiş bildirgeler de bir kez taranır. Kartta dolu olan bilgi değiştirilmez. Bildirgesi henüz inmemiş kişiler için SGK'dan Çek'te 'PDF'leri de indir' işaretli olmalı.",
+    "nasil": "Personel › SGK İşe Giriş / Ayrılış Bildirimleri › SGK'dan Çek.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Ağdaki bilgisayarda Lisans ve Ödeme ekranı açılır",
+    "tur": "iyilestirme",
+    "kitle": "ust",
+    "aciklama": "Ağdaki bilgisayarlarda Lisans ve Ödeme ekranı (bakiye, ödeme seçenekleri, ödeme bildirimi), destek talepleri ve üst çubuktaki ödeme durumu artık ana bilgisayarın lisansı üzerinden gelir; önceden 'Bu bilgisayarda kayıtlı bir lisans bulunamadı' diyordu.",
+    "nasil": "Sistem › Destek, Lisans ve Güncelleme › Lisans ve Ödeme.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "SGK Bildirimleri ekranı sadeleşti",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Tek ana düğme 'SGK'dan Güncelle'; üstte Bekleyen / Geciken / Tarihi hatalı / Programda olmayan sayaçları. İlk sekme 'Yapılacaklar' yalnız işlem gerekenleri ve her satırda ne yapılması gerektiğini gösterir (çift tık yapar). Bildirilmişler 'Geçmiş' sekmesinde. Güncelleme bitince kişi kişi ne yapıldığı (bildirildi işaretlendi, PDF özlüğe eklendi, meslek kodu yazıldı…) listelenir. Bilgi formu ve Excel listesi sağ tıkta.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Görev listesinden toplu liste: bankaya, İSG eğitimine, muayeneye",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "İşe Giriş / Çıkış Görevleri'nde yeni 'Görevlere Göre' sekmesi: her görevde bekleyen kişiler. Görevin amacına göre hazır sütunlu liste yazdırılır ya da Excel'e aktarılır - IBAN'ı olmayanlar için banka hesap açılış listesi (T.C., doğum yeri / tarihi, anne-baba adı, telefon, adres), İSG eğitimi katılımcı listesi (imza sütunlu), işe giriş muayenesi listesi, KKD teslim listesi ve diğerleri. 'Tüm aktif çalışanları tara' işaretlenirse görev listesi olmayan eski çalışanlar da taranır. Üstte sayaç kartları ve sorumlu süzgeci.",
+    "nasil": "Personel › İşe Giriş / Çıkış Görevleri › Görevlere Göre.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "İSG Takibi baştan düzenlendi",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Altı sekmenin hepsinde üstte durum kartları (tıklayınca ilgili listeyi ya da kaydı açar) ve ilk sırada 'Yapılacaklar': her satırda ne yapılacağı yazar, çift tık yapar. Sağlık muayenesinde toplu kayıt (işyeri hekimi aynı gün çok kişiye baktığında), muayene geçmişi; iş kazasında tek ana düğme, bu yılın kaza ve kayıp iş günü sayısı; KKD'de kimde ne var, KKD verilmeyenler, birden çok kişiye tek seferde teslim (tutanaklar tek önizlemede), iade alma ve tutanağı yeniden yazdırma; eğitimde seçilenlere toplu kayıt ve eğitim oturumları (katılımcıların Ek-2 belgeleri birlikte); hizmetlerde uzman / hekim kartları; risk ve acil durumda belge ve ekip kartları, ekiplere toplu atama, ilk yardım sertifikası takibi.",
+    "nasil": "Mevzuat › İSG Takibi.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "SGK ekranında 'Yeni Girişler' sekmesi",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "SGK'ya bildirilmiş yeni işe girişler, bildirgesi açılıp bakılana kadar 'Yeni Girişler' sekmesinde durur; çift tıkla bildirge açılınca kişi Geçmiş'e geçer. Toplu kontrol edilenler sağ tıkla topluca Geçmiş'e aktarılabilir.",
+    "nasil": "Personel › SGK İşe Giriş / Ayrılış Bildirimleri › Yeni Girişler.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "SGK'da iki giriş bildirgesi olan kişide tarih uyarısı gidip gelmez",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Bir kişi için SGK'da iki ayrı işe giriş (ya da ayrılış) bildirgesi varsa, kart tarihi hangisine göre girilirse girilsin öteki 'tarihi hatalı' diye gösterilmiyordu; artık 'SGK'da 2. işe giriş bildirgesi' olarak gösterilir. Yanlış olan bildirgenin SGK'da iptal ettirilmesi gerekir; çift tıkla uyarı kapatılabilir, kart değişmez.",
+    "nasil": "Personel › SGK İşe Giriş / Ayrılış Bildirimleri › Yapılacaklar.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "İcra Takip devam eden dosyalarla açılır",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "İcra Takip ilk açıldığında yalnız devam eden dosyalar (borçlusu çalışan, dosyası açık) görünür. Biten dosyalar, işten çıkanların dosyaları ve tümü üstteki seçimden açılır; 'Bildirim bekleyen' sayısı her görünümde tüm dosyalardan sayılır.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Toplu kıdem ve ihbar hesabı",
+    "tur": "yeni",
+    "kitle": "maas",
+    "aciklama": "Kıdem / İhbar ekranında 'Toplu Hesap' sekmesi: mevcut çalışanların seçilen tarihte işten çıkarılsalar doğacak kıdem, ihbar ve kullanılmayan izin yükü (brüt) - özet kartları, bölüm süzgeci, en yüksek üstte liste, Excel ve yazıcı çıktısı. 'Kişi Hesabı' artık çalışanlarla açılır; çalışan için 'bugün çıksa' hesabı yapılır (ayrılanlar kutu işaretlenince gelir).",
+    "nasil": "İK › Kıdem / İhbar Tazminatı (Kişi ve Toplu Hesap).",
+    "hedef": "eylem:_tazminat_hesabi",
+    "menu": "Kıdem / İhbar Tazminatı (Kişi ve Toplu Hesap)"
+   },
+   {
+    "baslik": "Personel kartı yeniden düzenlendi",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Tek kalabalık 'Bilgiler' sekmesi yerine iki sekme - 'Kimlik ve İletişim' (kişisel, aile, iletişim, acil durum, KEP, banka) ve 'İş ve Ücret' - ve başlıklı kartlar. Engelli, MESEM / stajyer ve uzaktan çalışma alanları yalnız ilgili kutu işaretlenince açılır. Zorunlu alanlar '*' ile işaretli; eksik bırakılan alan kaydederken kırmızı çerçeveyle gösterilir ve sekmesi açılır. Kaydet sağ altta.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "SGK'da olup kartla uyuşmayan bildirgeler görünür",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "SGK'da işten ayrılışı bildirilmiş ama kartı hâlâ aktif olanlar, eski kartında SGK'da yeni işe girişi görünenler ve giriş / çıkış tarihi SGK'dakinden farklı olanlar 'Yapılacaklar'da listelenir; çift tık doğru ekranı açar (SGK Çıkışı Yap, Yeniden İşe Al ya da tarih düzeltme); SGK çıkışında tarih ve çıkış kodu bildirgeden dolu gelir. Listeler en yeni tarih üstte.",
+    "nasil": "Personel › SGK İşe Giriş / Ayrılış Bildirimleri › Yapılacaklar.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "e-Vizite ekranı sadeleşti",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Üstte Onay bekleyen / Programda yok / Raporluyken kart basan sayaçları, tek ana düğme 'SGK'dan Güncelle'. 'Yapılacaklar' sekmesi her rapor için ne yapılacağını söyler (çalışmadı bildirin, izne aktarın, kart basımını kontrol edin) ve çift tıkla yapar; tüm raporlar ayrı sekmede. T.C., tesis, takip no ve yedek okuma sağ tıkta.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Bildirimlerde okundu takibi",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "🔔 listesinde tıkladığınız bildirim okundu sayılır ve sayı bir azalır. Okunmamışlar üstte, mavi noktalı durur; 'Yalnız okunmamışlar' ile süzülebilir; sağ tıkla 'Okundu say / Okunmadı yap'. Gidilecek ekranı olmayan bildirimde liste açık kalır.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   }
+  ]
+ },
+ {
   "surum": "1.1.22",
   "tarih": "2026-10-19",
   "maddeler": [
