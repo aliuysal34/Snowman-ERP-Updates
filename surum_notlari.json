@@ -1,0 +1,434 @@
+[
+ {
+  "surum": "1.1.21",
+  "tarih": "2026-10-19",
+  "maddeler": [
+   {
+    "baslik": "Neler Yeni penceresi ve sürüm notları",
+    "tur": "yeni",
+    "kitle": "hepsi",
+    "aciklama": "Güncellemeden sonraki ilk açılışta, rolünüzü ilgilendiren yenilikler bu pencerede bir kez gösterilir. Her maddedeki 'Ekranı Aç' ilgili ekrana götürür.",
+    "nasil": "Notlara istediğiniz zaman Sistem › Destek, Lisans ve Güncelleme › Sürüm Notları (Neler Yeni) menüsünden bakabilirsiniz.",
+    "hedef": "",
+    "menu": "Sürüm Notları"
+   },
+   {
+    "baslik": "Güncellemeden önce neler geleceğini görün",
+    "tur": "yeni",
+    "kitle": "yonetici",
+    "aciklama": "Güncelleme ekranında 'Güncellemeyi Başlat'tan önce yeni sürümün notları gösterilir (yazılım firması imzalı).",
+    "nasil": "Sistem › Destek, Lisans ve Güncelleme › Güncellemeleri Kontrol Et.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "İcra Takip: çalışan / işten çıkan borçlular ve ayrılış bildirimi",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Borçlunun çalışıp çalışmadığı 'Personel Durumu' sütununda; işten çıkanların dosyaları soluk renkte ve listenin sonunda. Aktif dosyası olan ayrılmış borçlu için icra dairesine ayrılış bildirimi yapılıp yapılmadığı 'Ayrılış Bildirimi' sütununda (yapılmadıysa kırmızı, ana sayfada uyarı, çıkış görev listesinde görev).",
+    "nasil": "Hukuk › İcra Takip › üstteki seçiciden 'İşten çıkanlar' / 'Ayrılış bildirimi bekleyenler'. Satıra sağ tık › 'Ayrılış Bildirimi Yaz / Gönder' (cevap yazısı) ya da program dışından yaptıysanız 'Ayrılış Bildirimi Yapıldı'.",
+    "hedef": "sayfa:icra",
+    "menu": "İcra Takip"
+   },
+   {
+    "baslik": "Yeni icra dosyası ekranı",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "İcra dosyası formu yenilendi: üstte borçlunun durumu (çalışıyor / ayrıldı), kaçıncı sırada olduğu, ödenen / kalan borç ve cevap son günü (kalan gün); bölümler kartlarda; aylık tahmini kesinti; 'Cevap Dilekçesi Hazırla' düğmesi. Ayrılmış borçluya gelen icra yazısında (Akıllı Evrak / telefon) da dosya açılır ve 'işten ayrıldı' cevabı hazırlanır; gönderilince İcra Takip'te ayrılış bildirimi 'Bildirildi' olur.",
+    "nasil": "Hukuk › İcra Takip › Yeni Ekle ya da dosyaya çift tık.",
+    "hedef": "sayfa:icra",
+    "menu": ""
+   },
+   {
+    "baslik": "Ayrılan personelin icra dosyası düzenlenebilir",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "İşten çıkan personelin icra dosyası açıldığında 'Personel' alanı boş geliyor ve 'cevap verildi' gibi değişiklikler kaydedilemiyordu. Artık kişi '(ayrıldı)' notuyla görünür, dosya güncellenebilir.",
+    "nasil": "Hukuk › İcra Takip › dosyaya çift tık.",
+    "hedef": "sayfa:icra",
+    "menu": ""
+   },
+   {
+    "baslik": "Dava ve arabuluculuk takibi",
+    "tur": "yeni",
+    "kitle": "maas",
+    "aciklama": "Personelle ilgili arabuluculuk ve davalar: aşama, duruşmalar, yasal süreler (arabulucuya başvuru, dava açma, istinaf, işe iade sonrası süreler kendiliğinden hesaplanır), evrak (özlüğe de kaydedilir), ödemeler, risk raporu. 'Savunma Dosyası' kişinin puantajını, PDKS basımlarını, resmî hesap pusulalarını, izin, disiplin, SGK ve özlük belgelerini tek pakette avukata hazırlar.",
+    "nasil": "Hukuk › Dava ve Arabuluculuk Takibi › Yeni Dosya; ya da Personel listesinde kişiye sağ tık. Süreleri avukatınızla teyit edin.",
+    "hedef": "eylem:_davalar",
+    "menu": "Dava ve Arabuluculuk Takibi"
+   },
+   {
+    "baslik": "Ağdaki bilgisayarlardan SGK sorguları",
+    "tur": "onemli",
+    "kitle": "ik",
+    "aciklama": "Ağdaki bilgisayarlarda e-Vizite 'Şimdi Sorgula', 'Çalıştı / Çalışmadı Bildir', işe giriş / ayrılış bildirgelerini çekme ve iş kazası sorgusu 'SGK şifresi girilmemiş' hatası veriyordu (kurum şifreleri güvenlik gereği ağa okunmaz). Artık bu sorgular ana bilgisayarda yapılır; SGK güvenlik kodu gerekirse size sorulur, bitince bildirim gelir. Ana bilgisayarın da bu sürüme güncellenmesi gerekir.",
+    "nasil": "Mevzuat › SGK e-Vizite Raporları › Şimdi Sorgula; Mevzuat › SGK İşe Giriş / Ayrılış Bildirimleri › SGK'dan çek.",
+    "hedef": "eylem:_vizite",
+    "menu": ""
+   },
+   {
+    "baslik": "Avans yalnız aktif personele",
+    "tur": "iyilestirme",
+    "kitle": "maas",
+    "aciklama": "Toplu avans girişinde yalnız çalışan personel listelenir; ay içinde avans alıp sonra ayrılan kişi, avansı çıkış bordrosunda kesileceği için '(ayrıldı)' notuyla görünür. Tek tek girişte ayrılan personele yeni avans girilemez.",
+    "nasil": "Finans › Avans, Prim ve Kesinti Yönetimi › Toplu Kesinti Girişi › Avans.",
+    "hedef": "sayfa:avans_prim",
+    "menu": ""
+   },
+   {
+    "baslik": "Tablolarda kutuyla seçim ve 'tümünü seç'",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Birden fazla satır seçilebilen bütün listelerde satır başında onay kutuları var: kutuya tıklamak satırı seçime ekler / çıkarır (Ctrl gerekmez), Shift + kutu aralık seçer. Sol üst köşedeki kutu görünen satırların tümünü seçer / bırakır. Ctrl / Shift ile seçim eskisi gibi çalışır.",
+    "nasil": "Ör. İK › Toplu Maaş Tipi Değiştirme: kutularla kişileri seçin ya da köşeden tümünü seçin.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Özlük Eksik Evrak Raporu hızlandı",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Ağdaki bilgisayarlarda rapor ~1 dakika yerine bir saniyenin altında açılır; pencere hemen açılıp rapor ardından dolar (program donmaz).",
+    "nasil": "Evrak › Özlük Eksik Evrak Raporu.",
+    "hedef": "eylem:_ozluk_raporu",
+    "menu": ""
+   },
+   {
+    "baslik": "Listeler kendiliğinden tazelenir",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Başka ekrandan eklenen kayıt (ör. telefondan okutulan icra yazısından açılan dosya, Personel sağ tık › Kayıt Ekle ile girilen eğitim / zimmet / avans) İcra, Eğitim, Demirbaş, Avans / Prim, Performans ve Disiplin listelerinde F5'e basmadan görünür.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Menüde 🆕 etiketi ve yapılacaklar listesi",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Yeni eklenen menü öğelerinin yanında 30 gün '🆕' görünür. Güncelleme sonrası yapılması gereken ayarlar (kurtarma anahtarı, İSG uzmanı, VERBİS...) Yönetici'nin bildirimlerine düşer, yapılınca kendiliğinden kalkar.",
+    "nasil": "Üst çubuktaki 🔔 bildirimlerine bakın.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Personel listesi ağda kendiliğinden güncellenir",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Ağdaki başka bir bilgisayardan eklenen ya da çıkışı yapılan personel, Personel Listesi açık dururken birkaç saniye içinde görünür; programı kapatıp açmak gerekmez. Seçili satır ve kaydırma yerinde kalır.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Sağ tıkta ayrı 'SGK Çıkışı Yap'",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Aktif personelin işten çıkışı artık Sil'e girmeden, sağ tık › 'SGK Çıkışı Yap (İşten Çıkış)' ile yapılır: çıkış tarihi ve SGK çıkış kodu sorulur, kişi Çıkanlar (Arşiv)'e geçer. Sil eskisi gibi duruyor.",
+    "nasil": "Personel Listesi › kişiye sağ tık › 🚪 SGK Çıkışı Yap (İşten Çıkış).",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "SGK bildirgesi doğru karta bağlanır, PDF özlüğe gider",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Aynı T.C. ile birden çok kart varsa SGK'dan çekilen bildirge, tarihi birebir tutan karta bağlanır; önceden yanlış karta bağlananlar PDF'i ve özlük evrakıyla birlikte kendiliğinden doğru karta taşınır. PDF'i alınamayan bildirgeler çekme sonunda adıyla listelenir; 'PDF'leri de indir' kapalıysa bu da yazılır.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Aynı kişi iki kez aktif kaydedilemez",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Aynı T.C. ile aktif bir kart varken yeni kart kaydedilmez. SGK Bildirimleri ekranında da mükerrer kartlar 'MÜKERRER KART?' olarak gösterilir.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "SGK Bildirimleri: tarih aralığı ve yeni gelenler",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Dönem seçimi yerine başlangıç–bitiş tarihi geldi; bitiş her açılışta bugündür. SGK'dan çektikten sonra liste çekilen aralığa ayarlanır, yeni gelen bildirgeler 🆕 ile işaretlenir.",
+    "nasil": "Personel › SGK İşe Giriş / Ayrılış Bildirimleri.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "İş sözleşmesi yeniden 2 sayfa",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "İş sözleşmesine eklenen firma üst bilgisi ve alt bilgisi kaldırıldı; sözleşme 3 sayfaya taşmadan eskisi gibi 2 sayfa basılır. Dilekçelerdeki üst / alt bilgi aynen duruyor.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   }
+  ]
+ },
+ {
+  "surum": "1.1.20",
+  "tarih": "2026-10-18",
+  "maddeler": [
+   {
+    "baslik": "Kiosk girişinde PIN",
+    "tur": "onemli",
+    "kitle": "ik",
+    "aciklama": "Kioskta T.C. kimlik numarasından sonra 4 haneli PIN sorulur. Personel ilk girişte doğum tarihiyle kendi PIN'ini belirler. 5 hatalı denemede 30 dakika kilitlenir.",
+    "nasil": "Kartında doğum tarihi olmayanların ve PIN'ini unutanların PIN'ini İK açar: Personel listesi › sağ tık › PDKS ve İzin › Kiosk PIN'ini Sıfırla.",
+    "hedef": "sayfa:personel",
+    "menu": ""
+   },
+   {
+    "baslik": "Yedekler şifreli - kurtarma anahtarını saklayın",
+    "tur": "onemli",
+    "kitle": "yonetici",
+    "aciklama": "Yedekler artık şifreli (.erpyedek) ve program klasöründeki 'Yedekler' altında. Bilgisayar bozulursa yedekler yalnız KURTARMA ANAHTARI ile açılır.",
+    "nasil": "Klasör, Şifre ve Yedek Güvenliği ekranından kurtarma anahtarını yazdırıp kasada saklayın.",
+    "hedef": "eylem:_klasor_guvenligi",
+    "menu": "Klasör, Şifre ve Yedek Güvenliği"
+   },
+   {
+    "baslik": "Program klasörü izinleri ve kurum şifreleri",
+    "tur": "onemli",
+    "kitle": "yonetici",
+    "aciklama": "Program klasörüne yalnız Yöneticiler ve programı kullanan Windows hesabı erişir. SGK / GİB / e-Devlet şifreleri yalnız girildikleri Windows hesabında çözülür.",
+    "nasil": "Program aynı bilgisayarda başka bir Windows hesabıyla da kullanılıyorsa o hesabı Klasör, Şifre ve Yedek Güvenliği ekranından ekleyip 'İzinleri Uygula' deyin; kurum şifrelerini o hesapta bir kez yeniden girin.",
+    "hedef": "eylem:_klasor_guvenligi",
+    "menu": ""
+   },
+   {
+    "baslik": "Yeni ağ bilgisayarı yönetici onayıyla bağlanır",
+    "tur": "onemli",
+    "kitle": "yonetici",
+    "aciklama": "Ana bilgisayara ilk kez bağlanan bilgisayar, Yönetici onaylayana kadar bekler. Önceden bağlı bilgisayarlar etkilenmez.",
+    "nasil": "Sistem › Ağ Ayarları › Lisanslı ağ bilgisayarları › 'ONAY BEKLİYOR' satırı › Onayla.",
+    "hedef": "eylem:_ag_ayarlari",
+    "menu": ""
+   },
+   {
+    "baslik": "Yetki yalnız rolden gelir; pasif hesap, şifre sıfırlama",
+    "tur": "onemli",
+    "kitle": "yonetici",
+    "aciklama": "Kullanıcı adı ('admin') artık yetki vermez. Rolü boş hesaplar ilk açılışta Yönetici yapıldı (kayda geçti). Kullanıcı Yönetimi'nde hesap pasifleştirilebilir, şifre sıfırlanabilir, kullanıcının işlemleri görülebilir.",
+    "nasil": "Sistem › Kullanıcı ve Güvenlik › Kullanıcı Yönetimi › kullanıcıya sağ tık.",
+    "hedef": "sayfa:kullanici_yonetimi",
+    "menu": ""
+   },
+   {
+    "baslik": "Kalıcı silme kilidi (10 yıl saklama)",
+    "tur": "onemli",
+    "kitle": "ik",
+    "aciklama": "SGK'ya bildirilmiş ya da fiilen çalışmış personel, çıkışından itibaren 10 yıl dolmadan 'Tamamen Sil' ile silinemez (5510 md.86). Yanlış / mükerrer açılan kayıtlar silinebilir.",
+    "nasil": "Ayrılanlar 'İşten Çıkış' ile arşive alınır; süresi dolanlar KVKK › Saklama ve İmha'da listelenir.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "İşe giriş / işten çıkış görev listeleri",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Yeni giren ve ayrılan personel için yapılacaklar (SGK bildirgesi, sözleşme, muayene, İSG eğitimi, KKD, PDKS kartı, zimmet iadesi, çalışma belgesi...). Program denetleyebildiği görevleri kendisi tamamlar.",
+    "nasil": "İK › İşe Giriş / Çıkış Görevleri; ya da Personel listesinde kişiye sağ tık.",
+    "hedef": "eylem:_gorev_listeleri",
+    "menu": "İşe Giriş / Çıkış Görevleri"
+   },
+   {
+    "baslik": "Çalışan anketleri",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "İsimsiz bağlılık / memnuniyet anketleri; personel kioskta yanıtlar. Sonuçlar en az 5 yanıtla, eNPS ve bölüm kırılımıyla gösterilir.",
+    "nasil": "Çalışan › Çalışan Anketleri › Yeni Anket (hazır şablondan) › Yayınla.",
+    "hedef": "eylem:_anketler",
+    "menu": "Çalışan Anketleri"
+   },
+   {
+    "baslik": "360° değerlendirme",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Kişi kendisi, amiri, ekip arkadaşları ve astları tarafından yetkinlik bazında puanlanır; puanlama kioskta. Ekip / ast puanları en az 3 kişiyle toplu gösterilir.",
+    "nasil": "İK › 360° Değerlendirme › Yeni Dönem › Değerlendirenleri Ata › Yayınla. Amir bilgisi personel kartındaki 'Bağlı Olduğu Yönetici'den gelir.",
+    "hedef": "eylem:_degerlendirme_360",
+    "menu": "360° Değerlendirme"
+   },
+   {
+    "baslik": "İSG: eğitim, uzman / hekim, risk ve acil durum",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Yeni İSG eğitim yönetmeliğine göre saat / tekrar / sınav takibi ve eğitim belgesi; iş güvenliği uzmanı ve işyeri hekimi sözleşmeleri; risk değerlendirmesi, acil durum planı, tatbikat; destek elemanı ve ilk yardımcı sayısı.",
+    "nasil": "Mevzuat › İSG Takibi › yeni sekmeler. Önce uzman / hekimi ve son risk değerlendirmesini girin.",
+    "hedef": "eylem:_isg",
+    "menu": "İSG Takibi"
+   },
+   {
+    "baslik": "KVKK: VERBİS ve veri erişim günlüğü",
+    "tur": "yeni",
+    "kitle": "yonetici",
+    "aciklama": "VERBİS kaydının gerekip gerekmediği (çalışan sayısı / bilanço) gösterilir. Kişisel / sağlık verisine kimin eriştiği günlüğe yazılır.",
+    "nasil": "Mevzuat › KVKK Uyum Merkezi › VERBİS; Sistem › Kullanıcı ve Güvenlik › Kişisel Veri Erişim Günlüğü.",
+    "hedef": "sayfa:kvkk",
+    "menu": "Kişisel Veri Erişim Günlüğü"
+   },
+   {
+    "baslik": "Uzaktan çalışma ve KEP ile bildirim",
+    "tur": "yeni",
+    "kitle": "ik",
+    "aciklama": "Personel kartında çalışma yeri (işyerinde / uzaktan / hibrit), KEP adresi ve kabul tarihi. Uzaktan çalışma sözleşmesi ve elektronik bildirim kabul beyanı yazdırılır. Uzaktan çalışma talebi 30 gün içinde cevaplanmalı uyarısı.",
+    "nasil": "Personel listesi › sağ tık › Özlük Bilgileri › Uzaktan Çalışma Sözleşmesi / KEP Bildirim Kabul Beyanı.",
+    "hedef": "sayfa:personel",
+    "menu": ""
+   },
+   {
+    "baslik": "Grup şirketleri",
+    "tur": "yeni",
+    "kitle": "ust",
+    "aciklama": "Birden çok şirket ayrı veritabanıyla tek programda; açılışta şirket seçimi, şirketler arası personel nakli.",
+    "nasil": "Sistem › Firma ve Tanımlar › Grup Şirketleri.",
+    "hedef": "eylem:_grup_sirketleri",
+    "menu": "Grup Şirketleri"
+   },
+   {
+    "baslik": "Bordro ve SGK yenilikleri",
+    "tur": "yeni",
+    "kitle": "maas",
+    "aciklama": "MUHSGK XML, muhasebe fişi aktarımı, SGK'ya işe giriş / çıkış bildirgesi gönderme, bordro farkı, yemek kartı istisnası, MESEM / stajyer ücreti, kısa çalışma, birden çok SGK işyeri, pusula e-imza, çok aşamalı onay.",
+    "nasil": "Bordro ve Finans menüleri; SGK bildirgesi için Personel listesi › sağ tık › SGK Bildirgesi.",
+    "hedef": "sayfa:bordro",
+    "menu": "Kısa Çalışma"
+   },
+   {
+    "baslik": "Onay Bekleyenler",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "İzin, fazla mesai, avans gibi çok aşamalı onaylarda kararınızı bekleyenler tek ekranda.",
+    "nasil": "Çalışan › Onay Bekleyenler.",
+    "hedef": "eylem:_onay_bekleyenler",
+    "menu": "Onay Bekleyenler"
+   },
+   {
+    "baslik": "Acil durum / tahliye listesi",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "PDKS basımlarına göre şu an içeride olanların listesi (tahliye ve sayım için).",
+    "nasil": "Raporlar › Acil Durum / Tahliye Listesi.",
+    "hedef": "eylem:_tahliye_listesi",
+    "menu": "Tahliye Listesi"
+   },
+   {
+    "baslik": "Telefondan evrak ve akıllı evrak yükleme",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Telefonla QR okutup evrak fotoğrafı gönderme (şifreli bağlantı); yüklenen evrakın kişisini ve türünü program önerir.",
+    "nasil": "Evrak › Telefondan Evrak Gönder (QR) / Akıllı Evrak Yükleme.",
+    "hedef": "eylem:_telefondan_evrak",
+    "menu": "Telefondan Evrak Gönder"
+   },
+   {
+    "baslik": "Tarih kutuları",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Del / Backspace tarihi tek seferde siler; 01012026 yazınca 01.01.2026 olur; takvim boş alanda bugünde açılır.",
+    "nasil": "Tarihi seçip yazmanız yeterli; yalnız günü değiştirmek için gün hanesine tıklayıp yazın.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Sağ tık menüleri ve yazdırma",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Birçok ekrana sağ tık menüsü eklendi (Kopyala / Yazdır / Excel dahil). Ctrl+P her ekranda yazdırır; F5 / Ctrl+F sekmeli sayfalarda çalışır; liste sütun genişlikleri hatırlanır. Performans ve Avans / Prim kayıtları düzenlenebilir.",
+    "nasil": "Tablodaki satıra sağ tıklayın.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Ağda hız",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Ağdaki bilgisayarlarda PDKS ekranları ve listeler belirgin şekilde hızlandı; ana bilgisayarla bağlantı koparsa üst çubukta uyarı görünür.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   }
+  ]
+ },
+ {
+  "surum": "1.1.19",
+  "tarih": "2026-10-16",
+  "maddeler": [
+   {
+    "baslik": "Serbest zaman (fazla mesai yerine izin)",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Fazla çalışma ücret yerine serbest zaman olarak kullandırılabilir (İş K. md.41); bakiye ve kullanım takibi.",
+    "nasil": "İzin Yönetimi › Serbest Zaman.",
+    "hedef": "sayfa:izin",
+    "menu": ""
+   },
+   {
+    "baslik": "KVKK Uyum Merkezi",
+    "tur": "yeni",
+    "kitle": "yonetici",
+    "aciklama": "Aydınlatma metni ve imza takibi, ilgili kişi başvuruları (30 gün), biyometrik PDKS uyumu, saklama ve imha.",
+    "nasil": "Mevzuat › KVKK Uyum Merkezi.",
+    "hedef": "sayfa:kvkk",
+    "menu": "KVKK Uyum Merkezi"
+   },
+   {
+    "baslik": "Kıdem / ihbar tazminatı ve ibraname",
+    "tur": "yeni",
+    "kitle": "maas",
+    "aciklama": "Kıdem / ihbar hesap belgesi, ibraname, çıkış bordrosuna aktarım.",
+    "nasil": "Hukuk › Kıdem / İhbar Tazminatı Hesabı; ya da Personel listesinde ayrılan kişiye sağ tık.",
+    "hedef": "eylem:_tazminat_hesabi",
+    "menu": "Kıdem / İhbar Tazminatı"
+   },
+   {
+    "baslik": "Fazla çalışma yazılı onayı ve aylık onay",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Fazla çalışma için işçinin yazılı onayı (Yönetmelik md.9) ve ay sonunda fazla mesainin onaylanması; onaylanmayan fazla mesai bordroya girmez.",
+    "nasil": "PDKS › Fazla Mesai Onayı.",
+    "hedef": "sayfa:pdks",
+    "menu": ""
+   },
+   {
+    "baslik": "SGK işe giriş / ayrılış bildirimleri ve e-Vizite",
+    "tur": "yeni",
+    "kitle": "ik",
+    "aciklama": "SGK'dan bildirgeleri çekme, 4A Tescil'den okuma; e-Vizite raporlarının SGK'dan otomatik okunması ve rapor izni olarak işlenmesi.",
+    "nasil": "Mevzuat › SGK İşe Giriş / Ayrılış Bildirimleri; Mevzuat › SGK e-Vizite Raporları.",
+    "hedef": "eylem:_sgk_bildirimleri",
+    "menu": ""
+   },
+   {
+    "baslik": "İSG, teşvik, engelli kontenjanı, pusula teslimi",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Sağlık muayeneleri, iş kazası (3 iş günü), KKD zimmeti; teşvik kanun no takibi; engelli kontenjanı ve İŞKUR; ücret hesap pusulasının kioskta teslim alınması (İş K. md.37).",
+    "nasil": "Mevzuat menüsü; Finans › Pusula Teslim Takibi.",
+    "hedef": "eylem:_isg",
+    "menu": ""
+   },
+   {
+    "baslik": "Kioskta avans / masraf talebi ve özlük kontrol listesi",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Personel kiosktan avans / masraf talebi açar, İK onaylar. Personel kartında özlük dosyası kontrol listesi (kimde hangi evrak eksik).",
+    "nasil": "Çalışan › Avans / Masraf Talepleri; Evrak › Özlük Eksik Evrak Raporu.",
+    "hedef": "eylem:_avans_talepleri",
+    "menu": ""
+   },
+   {
+    "baslik": "Kurumsal belge şablonları ve ekran düzeltmeleri",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Yazdırılan belgeler firma başlığıyla tek tip; küçük ekranlarda taşan pencereler düzeltildi.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   }
+  ]
+ }
+]
