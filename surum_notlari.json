@@ -1,5 +1,110 @@
 [
  {
+  "surum": "1.1.24",
+  "tarih": "2026-10-20",
+  "maddeler": [
+   {
+    "baslik": "SGK bildirge okumasında PDF'ler artık yanlışlıkla kapanmıyor",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "90 günden uzun tarih aralığında sorulan 'PDF'siz, yalnız liste okunsun mu?' sorusunda 'Evet' işlemi onaylamak sanılıyor ve 'PDF'leri de indir' işareti kalkıyordu; PDF'ler inmiyordu. Soru artık açık adlı düğmelerle soruluyor: 'PDF'lerle Oku' (varsayılan), 'Yalnız Listeyi Oku', 'Vazgeç'. İnmemiş PDF'ler için aynı tarih aralığını yeniden okumak yeterli - daha önce inmiş olanlar tekrar istenmez.",
+    "nasil": "Personel › SGK İşe Giriş / Ayrılış Bildirimleri › SGK'dan Güncelle.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Yeniden işe alınanlarda eski çıkış artık 'yapılacak' görünmüyor",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "Daha önce girip çıkmış, sonra yeniden işe alınmış kişilerde eski dönemin çıkış bildirgesi Yapılacaklar'da 'kart hâlâ aktif - SGK çıkışı yap' ya da 'kartta çıkış yok - tarihi düzeltin' diye görünüyordu (çalışan kişiye yanlışlıkla çıkış yaptırabilirdi). Kartın girişinden önceki çıkış ve arada çıkışı olan eski giriş artık 'önceki çalışma dönemi' sayılır ve yalnız Geçmiş'te görünür.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "e-Vizite: elle girilen rapor izni eşleşir, 'İzne Aktar' ne yapacağını söyler",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Elle girilmiş rapor izni SGK raporunu kapsıyorsa rapor o izinle eşleşir ve 'Programda var' olur (adında rapor / hastalık / istirahat geçen özel izin türleri de sayılır). Tarihler tutmuyorsa ekranda neyin farklı olduğu yazar (ör. 'programda elle girilmiş rapor izni 04.09-02.10, SGK'da 04.09-03.10'); 'İzne Aktar' onayınızla izni SGK'daki tarihlere göre yeniler. Raporun tarihlerine yıllık izin gibi başka bir izin düşüyorsa hangisi olduğu yazar ve o izne dokunulmaz. Önceden bu durumlarda 'İzne Aktar' yalnız 'başka izin kaydı var' diyordu.",
+    "nasil": "Mevzuat › SGK e-Vizite Raporları.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Banka ve Hesaplar: personel IBAN'ları tek ekranda",
+    "tur": "yeni",
+    "kitle": "ust",
+    "aciklama": "'Banka Tanımları' ve 'Şirket Banka Hesapları' tek ekranda toplandı. İlk sekmede bütün aktif çalışanların maaş hesabı tablo üzerinde toplu girilir: IBAN'ı yazıp Enter, alt satıra geçer; IBAN anında doğrulanır (hatalı olan kırmızı), banka IBAN'dan kendiliğinden bulunur. Üstte IBAN'ı olmayan / hatalı çalışan sayısı; IBAN'ı olmayanların listesi Excel'e alınabilir, Excel'den toplu yükleme de buradan açılır. Birden çok hesabı olan kişide 'Diğer hesaplar' sütununa çift tıklayınca bütün hesapları açılır: hesap ekle, sil, '⭐ Maaş Hesabı Yap'.",
+    "nasil": "Sistem › Firma ve Tanımlar › Banka ve Hesaplar.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Görev ekranı: eksik bilgisi olan bütün çalışanlar",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "İşe Giriş / Çıkış Görevleri artık yalnız son girenleri değil, eksik bilgisi olan bütün aktif çalışanları gösterir (en çok eksiği olan üstte): IBAN, SGK bildirgesi, sözleşme, KVKK metni, muayene, İSG eğitimi, KKD, PDKS kartı, vardiya, kiosk PIN'i, özlük. Bilgi özlükten ya da karttan girildikçe kendiliğinden tamamlanır; gerekmeyen için 'Gerek Yok'. Eski çalışanlara görev listesi açılmaz (oryantasyon gibi elle işaretlenen görevler yalnız yeni girişte). Ekran yan yana düzenlendi: solda kişiler, sağda görevleri. 'Görevlere Göre' sekmesi de varsayılan olarak bütün çalışanları tarar.",
+    "nasil": "Personel › İşe Giriş / Çıkış Görevleri.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "e-Vizite: başka programın okuduğu raporlar da gelir",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "SGK'dan 'raporu var' e-postası gelen ama e-Vizite ekranına düşmeyen raporlar: rapor başka bir program ya da bilgisayar tarafından önce okunup SGK'da 'okundu' kapatıldığında yeni rapor listesine bir daha gelmiyordu. Artık günde bir kez aktif çalışanlar T.C. ile de aranır; son 60 günün programda olmayan raporları eklenir (SGK'da hiçbir rapor kapatılmaz). Ayrıca SGK'nın 'farklı IP'den alınmış geçerli oturum var' (108) yanıtı artık otomatik sorgulamayı durdurmaz; oturum kapanınca yeniden denenir.",
+    "nasil": "Mevzuat › SGK e-Vizite Raporları › SGK'dan Güncelle (günün ilk sorgusunda T.C. araması da yapılır).",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Toplu kesinti / ek ödemede kaydetmeden Excel ve PDF çıktısı",
+    "tur": "yeni",
+    "kitle": "maas",
+    "aciklama": "Toplu Kesinti ve Toplu Ek Ödeme ekranlarına '🖨 Çıktı' düğmesi: kaydetmeden önce kontrol için görünen ve tutarı girilmiş satırlar Excel'e ya da PDF / yazıcıya alınır. Excel'de tutarlar sayı ve ₺ biçimli (Excel'de toplanabilir), bölüm bölüm ara toplamlar ve genel toplam (gruplar kenardan kapatılabilir) ve ikinci sayfada süzgeçli Excel tablosu. Avans çıktısı ara toplamsız, ada göre alfabetik tek liste ve genel toplamla gelir. Kaydedilmemiş değişiklik varsa çıktının başında yazar.",
+    "nasil": "Finans › Avans / Prim › Toplu Kesinti ya da Toplu Ek Ödeme › Çıktı.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Excel'e aktarılan bazı listeler Excel'de açılmıyordu",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Sütun başlığı boş ya da tekrarlı olan listelerin Excel çıktısı Excel'de 'dosya açılamadı' hatası veriyordu. Başlıklar artık düzeltilerek yazılıyor (boş başlık 'Sütun N', tekrarlı başlık '(2)' ekiyle).",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "SGK sorguları ağdaki her bilgisayardan yapılır",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "İşe giriş / ayrılış bildirgelerini SGK'dan okuma, e-Vizite (web servisi ve tarayıcıyla okuma), çalıştı / çalışmadı bildirimi, iş kazası bildirimleri ve SGK'ya bildirge gönderme artık tıklandığı bilgisayarda çalışır; ilerleme ve sonuç o ekranda görünür (önceden ağdaki bilgisayar işi ana bilgisayara gönderiyordu). SGK giriş bilgileri ana bilgisayardan şifreli ağ bağlantısıyla alınır ve her alınışı sistem kaydına yazılır; Personel rolü alamaz. Şifreler yine yalnız ana bilgisayarda değiştirilir. Saatli otomatik sorgular eskisi gibi yalnız ana bilgisayarda çalışır (aynı sorgu birçok bilgisayardan SGK'ya gitmesin).",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Ağdaki bilgisayarda SGK ve e-Vizite pencereleri hızlı açılır",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "SGK İşe Giriş / Ayrılış Bildirimleri ve e-Vizite pencereleri ağdaki bilgisayarlarda verilerini satır satır ana bilgisayardan istediği için birkaç saniye geç açılıyordu (açılışta 784 ve 660 istek). Veri artık ana bilgisayarda hazırlanıp tek seferde geliyor (1 ve 14 istek).",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "SGK Yapılacaklar'dan satır kaldırma",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Yanlış eşleşen ya da işi yapılmış bir satır 'Listeden Kaldır' düğmesi, Delete tuşu ya da sağ tıkla kaldırılır; sonraki SGK okumalarında yeniden gelmez. İnen PDF'ler, özlük evrakı ve personel kartı değişmez. Boş alana sağ tık › 'Kaldırılanları Geri Getir' ile hepsi geri alınır.",
+    "nasil": "Personel › SGK İşe Giriş / Ayrılış Bildirimleri › Yapılacaklar.",
+    "hedef": "",
+    "menu": ""
+   }
+  ]
+ },
+ {
   "surum": "1.1.23",
   "tarih": "2026-10-19",
   "maddeler": [
