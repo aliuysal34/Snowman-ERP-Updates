@@ -1,5 +1,20 @@
 [
  {
+  "surum": "1.1.25",
+  "tarih": "2026-10-21",
+  "maddeler": [
+   {
+    "baslik": "e-Vizite: T.C. ile arama artık yarıda kalmıyor, sonucu görünüyor",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Başka bir programın okuyup kapattığı raporları bulan T.C. ile aramada SGK bir çalışan için hata kodu döndürünce (ör. kaydı yok) bütün arama sessizce duruyordu. Artık arama sürer; kaç kişi arandığı, SGK'da kaç rapor bulunduğu ve kaçının yeni eklendiği e-Vizite ekranının üstünde ve sistem kayıtlarında görünür.",
+    "nasil": "e-Vizite ekranında sağ tık › 'Bir Çalışanı SGK'da T.C. ile Ara…' ile tek kişinin SGK'daki raporlarını görün; 'Tüm Çalışanları T.C. ile Yeniden Ara' aramayı hemen tekrarlar.",
+    "hedef": "eylem:_vizite",
+    "menu": ""
+   }
+  ]
+ },
+ {
   "surum": "1.1.24",
   "tarih": "2026-10-20",
   "maddeler": [
