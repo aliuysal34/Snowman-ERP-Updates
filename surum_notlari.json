@@ -1,5 +1,83 @@
 [
  {
+  "surum": "1.1.26",
+  "tarih": "2026-10-21",
+  "maddeler": [
+   {
+    "baslik": "e-Vizite: SGK'nın kapattığı T.C. ile arama kaldırıldı",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "SGK, e-Vizite web servisinde T.C. ile rapor arama metodunu kapatmış ('Bu metod kapatılmıştır'). Programdaki T.C. ile arama ve sağ tık seçenekleri kaldırıldı; otomatik sorgu artık boşuna istek göndermez. Başka bir programın ya da bilgisayarın önce okuduğu rapor web servisinden bir daha gelmez: bu durumda 'Tarayıcıyla Oku' kullanın ya da izni elle girin - program rapor gelince kendiliğinden eşleştirir.",
+    "nasil": "Mevzuat › SGK e-Vizite Raporları › sağ tık › Tarayıcıyla Oku (yedek).",
+    "hedef": "eylem:_vizite",
+    "menu": ""
+   },
+   {
+    "baslik": "Ana sayfa uyarısından açılan ekranda yalnız uyarıdaki kişiler",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Uyarılar kartında bir uyarıya (ör. '1 kişinin vardiyası atanmamış', muayenesi eksikler, izin bakiyesi yüksekler) tıklayınca açılan ekranın listesinde yalnız o uyarının kapsadığı kişiler görünür. Listenin altındaki 'Tümünü göster' ile bütün liste geri gelir.",
+    "nasil": "Ana Sayfa › Uyarılar › uyarıya tıklayın.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Vardiya Atama'da giriş tarihi",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Personel - Vardiya eşleştirme listesine 'Giriş Tarihi' sütunu eklendi; yeni girenler sıralayıp kolayca bulunur.",
+    "nasil": "PDKS Ayarları › Vardiya Planı › Vardiya Atama.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Elle girilen rapor özlükte görünür, SGK'dan gelince eşleşir",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "Hastane raporu SGK'ya bildirmediği için e-Vizite'ye düşmeyen raporu İzin Yönetimi'nden rapor izni olarak girdiğinizde, özlük dosyasındaki 'SGK Raporları' sekmesinde 'Elle girildi' olarak görünür. Rapor SGK'dan sonradan gelirse program bu izinle kendiliğinden eşleştirir (iki kayıt olmaz). Rapor SGK'dan önce geldiyse program onu izne işlemiştir; elle girmeye çalışınca 'zaten kayıtlı' bilgisi verilir. Özlükteki rapor satırına çift tık hatası da giderildi.",
+    "nasil": "Personel kartı › Diğer Kayıtlar › SGK Raporları.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "e-Vizite: 1-2 günlük raporlar da onay bekliyor",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "SGK listesinde 'arşiv' işaretiyle gelen kısa raporlar yanlışlıkla 'onay gerekmez' sayılıp Yapılacaklar'a girmiyordu; oysa SGK bir günlük raporda da işveren bildirimi istiyor. Artık bu raporlar da 'Onay bekliyor' olarak Yapılacaklar'da çıkar. Önceki sürümün böyle saydığı son 45 günün raporları ilk SGK sorgusunda düzeltilir; SGK'da onaylanmış olanlar 'Onaylandı' olur.",
+    "nasil": "Mevzuat › SGK e-Vizite Raporları › SGK'dan Güncelle.",
+    "hedef": "eylem:_vizite",
+    "menu": ""
+   },
+   {
+    "baslik": "SGK'da iptal edilen bildirge artık 'tarih farklı' uyarısı vermiyor",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "İşe giriş SGK'da iptal edilip yeni tarihle yeniden verildiğinde (ör. 29.09 iptal, 01.10 yeni) eski bildirge her otomatik sorguda 'işe giriş tarihi SGK'dakinden farklı' bildirimi üretiyordu. Artık iptal bilinen bildirge hep iptal sayılır; kart tarihiyle birebir tutan geçerli bildirge varsa eski tarihli için uyarı çıkmaz; gerçek tarih farkı bildirimi de yalnız bir kez gelir (sürdükçe SGK Bildirimleri › Yapılacaklar'da görünür).",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Elden getirilen raporlar e-Vizite ekranında",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Hastanenin SGK'ya bildirmediği, elle girdiğiniz rapor izinleri e-Vizite ekranında da görünür: Yapılacaklar'da 'SGK'da yok (elden)' - e-Vizite sitesinde 'Manuel Çalışılmadığına Dair Bildirim' yaptıktan sonra çift tıklayıp 'SGK'ya manuel bildirildi' olarak işaretlersiniz. Rapor sonradan SGK'dan gelirse elle girilen izinle eşleşir, ayrı satır kalmaz. Böylece onaylı / onaysız bütün raporlar tek ekrandan izlenir.",
+    "nasil": "Mevzuat › SGK e-Vizite Raporları › Yapılacaklar.",
+    "hedef": "eylem:_vizite",
+    "menu": ""
+   },
+   {
+    "baslik": "e-Vizite Yapılacaklar'da 'Listeden Kaldır'",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Yapılacak bir şey kalmayan raporu (ör. programda kaydı olmayan eski çalışanın raporu) Yapılacaklar'dan kaldırabilirsiniz; sonraki SGK okumalarında yeniden gelmez, 'Tüm raporlar' sekmesinde kalır.",
+    "nasil": "e-Vizite › Yapılacaklar › satırı seçin › 'Listeden Kaldır' (ya da Delete / sağ tık). Geri getirmek: sağ tık › Kaldırılanları Geri Getir.",
+    "hedef": "eylem:_vizite",
+    "menu": ""
+   }
+  ]
+ },
+ {
   "surum": "1.1.25",
   "tarih": "2026-10-21",
   "maddeler": [
@@ -64,12 +142,12 @@
     "menu": ""
    },
    {
-    "baslik": "e-Vizite: başka programın okuduğu raporlar da gelir",
+    "baslik": "e-Vizite: başka oturum açıkken otomatik sorgu durmuyor",
     "tur": "onemli",
     "kitle": "personel_disi",
-    "aciklama": "SGK'dan 'raporu var' e-postası gelen ama e-Vizite ekranına düşmeyen raporlar: rapor başka bir program ya da bilgisayar tarafından önce okunup SGK'da 'okundu' kapatıldığında yeni rapor listesine bir daha gelmiyordu. Artık günde bir kez aktif çalışanlar T.C. ile de aranır; son 60 günün programda olmayan raporları eklenir (SGK'da hiçbir rapor kapatılmaz). Ayrıca SGK'nın 'farklı IP'den alınmış geçerli oturum var' (108) yanıtı artık otomatik sorgulamayı durdurmaz; oturum kapanınca yeniden denenir.",
-    "nasil": "Mevzuat › SGK e-Vizite Raporları › SGK'dan Güncelle (günün ilk sorgusunda T.C. araması da yapılır).",
-    "hedef": "",
+    "aciklama": "SGK'nın 'farklı IP'den alınmış geçerli oturum var' (108) yanıtı artık otomatik sorgulamayı durdurmaz; oturum kapanınca yeniden denenir. Önemli: e-Vizite raporunu başka bir program ya da bilgisayar önce okursa SGK o raporu web servisiyle bir daha vermez (SGK T.C. ile aramayı da kapatmıştır). Böyle bir rapor için 'Tarayıcıyla Oku' kullanın ya da izni elle girin - program rapor gelince eşleştirir.",
+    "nasil": "Mevzuat › SGK e-Vizite Raporları › sağ tık › Tarayıcıyla Oku (yedek).",
+    "hedef": "eylem:_vizite",
     "menu": ""
    },
    {
