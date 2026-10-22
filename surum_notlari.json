@@ -1,5 +1,137 @@
 [
  {
+  "surum": "1.1.27",
+  "tarih": "2026-10-21",
+  "maddeler": [
+   {
+    "baslik": "Personel kartı: Kimlik ve İletişim kaydırmadan sığıyor",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Kartlar yeniden dizildi (Kişisel - Aile - Acil durum üstte, İletişim ve Banka hesapları altta yan yana); sayfada ve banka listesinde kaydırma çubuğu çıkmaz. Bir çalışana en çok 5 banka hesabı tanımlanır, 5 hesabın hepsi listede görünür.",
+    "nasil": "Personel kartı › Kimlik ve İletişim.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "e-Vizite: SGK onay dökümü (PDF) rapora ve özlüğe kaydedilir",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "e-Vizite sitesinde rapor onaylanınca yalnız bir kez verilen 'Döküm' PDF'i (PdfTable.pdf) programa alınır: e-Vizite ekranı açılınca İndirilenler klasöründeki yeni dökümler kendiliğinden ilgili rapora bağlanır, özlüğe 'SGK Rapor Onay Dökümü' olarak eklenir ve rapor 'Onaylandı' olur. Dökümü olan rapor 📎 ile işaretlenir.",
+    "nasil": "e-Vizite › rapora sağ tık › 'Onay Dökümünü Aç' / 'Onay Dökümü Ekle' / 'İndirilenlerden Onay Dökümlerini Al'.",
+    "hedef": "eylem:_vizite",
+    "menu": ""
+   },
+   {
+    "baslik": "e-Vizite: arşivdeki kısa raporlar onay bekliyor, son gün bildirilebilir",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "SGK sitesinin 'Arşiv' listesindeki 2 gün ve daha kısa raporlar da işveren onayı bekliyor sayılır ve Yapılacaklar'a gelir; aynı rapor iki satır görünmez. SGK raporun son günü onayı kabul ettiği için program da artık son gün 'Bugün son gün - bildirebilirsiniz' der ve bildirimi gönderir.",
+    "nasil": "Mevzuat › SGK e-Vizite Raporları › SGK'dan Güncelle.",
+    "hedef": "eylem:_vizite",
+    "menu": ""
+   },
+   {
+    "baslik": "İşe alım: süreç sağ tıktan ilerletilir",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "CV havuzunda adayın aşaması (Bekliyor / Mülakata çağrıldı / Reddedildi / İşe alımı onaylandı) artık sağ tık › 'Süreci İlerlet' ile, aday ekranını açmadan değişir; not hazır gelir, değiştirilebilir. Birden çok aday seçilirse toplu yapılır (işe alım onayı işe giriş bilgileri istediği için tek tek).",
+    "nasil": "İşe Alım ve CV Havuzu › adaya sağ tık › Süreci İlerlet.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "İş kazası sorgusu: 'SGK girişi kabul etmedi' hatası düzeltildi",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "SGK İş Kazası e-Bildirim'e giriş yapıldığı hâlde sayfada ek bir şifre / kod alanı kaldığı için program girişi reddedilmiş sanıyor, giriş sonrası başlığı ('İşyeri No: ...') hata diye yazıp her sorguda aynı bildirimi veriyordu. Artık giriş sonrası sayfa tanınır; SGK SMS doğrulama kodu isterse kod sorulur (otomatik sorguda 'Şimdi Sorgula ile elle yapın' bildirimi), şifre yenileme isterse bu açıkça yazılır. Beklenmeyen SGK sayfası teşhis için Loglar klasörüne kaydedilir.",
+    "nasil": "Sistem › Otomatik SGK Sorguları › İş kazası › Şimdi Sorgula.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "SGK Teşvik Takibi: İşveren Sistemi'nden okuma",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "'SGK'dan Güncelle' ile SGK İşveren Sistemi'nden okunur: tanımlı teşvik listeleri (4447/Geçici 10, 15, 19, 26-31, 2828, 3294, SGDP), yeni girişlerin dönem dönem teşvik uygunluğu (SGK'nın her teşvik için 'yararlanabilir / yararlanamaz' cevabı ve nedeni) ve hatalı teşvik / cari dönem kontrolü. Kanun numarası belli tanımlı teşvikler MUHSGK listesine kendiliğinden yazılır (elle girilen kayda dokunulmaz). Ekran sayaçlar + Yapılacaklar düzeninde: uygun ama tanımlanmamış kişiler, biten teşvikler, kanun numarası seçilecek kayıtlar, hatalı bildirim. İşe alımda adaya sağ tık › 'SGK'da Teşvik Sorgula' ile potansiyel teşvik sorgulanır. Program yalnız okur; tanımlama SGK sitesinde yapılır.",
+    "nasil": "Mevzuat › SGK Teşvik Takibi › SGK'dan Güncelle.",
+    "hedef": "eylem:_tesvik",
+    "menu": ""
+   },
+   {
+    "baslik": "Eğitim, performans, disiplin ve zimmet ekranları yenilendi",
+    "tur": "yeni",
+    "kitle": "hepsi",
+    "aciklama": "Kayıt ekranlarında renkli başlık şeridi, personel seçilince açılan özet kartı (bölüm, görev, sicil, giriş ve ekrana göre önceki eğitim / değerlendirme / disiplin kaydı / zimmet sayısı) ve başlıklı bölümler var; performansta ortalama puan anında görünür. Disiplin 'Sicil Detayı' ekranının üstünde süreç adımları (Tutanak → Savunma İstemi → Savunma → Karar) gösterilir; evrak düğmesi aşamaya göre adlanır.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Disiplin: süreç sağ tıktan",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Disiplin listesinde kayda sağ tık: Süreci İlerlet (işlem türü), Resmi Evrak Üret, Savunmayı Gir, İmzalı Evrak Yükle / Görüntüle - detay penceresini açmadan.",
+    "nasil": "Tutanak ve Disiplin › kayda sağ tık.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Eğitim kaydında 'Süresiz' seçeneği",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Geçerlilik süresindeki 'Elle gir / Süresiz' seçeneği 'Süresiz' oldu; seçilince bitiş tarihi temizlenir.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "İşe alım: T.C. başvuruda isteğe bağlı, işe alım onayında istenir",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Aday başvuru aşamasında T.C. kimlik numarasını vermek istemeyebilir; başvuru formunda T.C. artık boş bırakılabilir (yazılırsa MERNİS kontrolü yapılır). İşe alım onaylanırken açılan pencerede işe başlama tarihiyle birlikte T.C. istenir (SGK işe girişi için zorunlu) ve personel kartına aktarılır.",
+    "nasil": "İşe Alım › aday › Süreci İlerlet › İşe Alımı Onaylandı.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Küçük pencerelerde gereksiz kaydırma çubuğu yok",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Form pencereleri (ör. işe alım onayı) açılırken içeriğin gerçek yüksekliğine göre ekrana sığdığı kadar büyür; içerik sığıyorsa kaydırma çubuğu çıkmaz.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Yeni iş başvurusu formu kaymadan sığıyor",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Notlar / Özet CV kutusu biraz kısaltıldı; form kaydırma çubuğu olmadan ekrana sığar (kutu yazdıkça kayar).",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "İhbar sihirbazı: örnek belgeler özlüğe sormadan girmiyor",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Sihirbaz yalnız ihbar süresi / tazminat bakmak için de kullanıldığından imzasız 'İstifa Dilekçesi Örneği' artık özlüğe kaydedilmez (imzalı dilekçe Akıllı Yükle ile eklenir); fesih bildirimi ve çalışma belgesinde özlüğe kaydedilsin mi diye sorulur. İş arama izni formu istifada artık 'istifa dilekçemle ... feshettiğimden' yazar (eskiden 'tarafıma tebliğ edilmiştir' diyordu).",
+    "nasil": "İK › İhbar / Fesih Sihirbazı.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "İSG tabloları dar pencerede kaymıyor",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "İSG Takibi'nin bütün sekmelerinde pencere küçükken 'Personel' sütunu eziliyor ve tablo yana kayıyordu. Artık ad sütunu hep tam okunur, kalan yeri son sütun ('Ne yapılmalı' vb.) kullanır; sığmayan yazı '…' ile kısalır, üzerine gelince tamamı görünür.",
+    "nasil": "Mevzuat › İSG Takibi.",
+    "hedef": "",
+    "menu": ""
+   }
+  ]
+ },
+ {
   "surum": "1.1.26",
   "tarih": "2026-10-21",
   "maddeler": [
