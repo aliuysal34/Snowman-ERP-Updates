@@ -1,5 +1,20 @@
 [
  {
+  "surum": "1.1.28",
+  "tarih": "2026-10-23",
+  "maddeler": [
+   {
+    "baslik": "e-Vizite: siteden okunan raporda doğru yönlendirme",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Tarayıcıyla Oku / SGK arşivinden gelen raporun SGK web servis numarası olmadığı için program 'çalışmadı' bildirimini gönderemez. Bu raporlarda 'Ne yapılmalı' artık 'e-Vizite sitesinden onaylayın' der; çift tık açıklamayı gösterip e-Vizite'yi açar (eskiden 'SGK'dan Güncelle ile okuyun' diyordu - güncelleme bu raporu getiremez). Sitede onaylanınca rapor, indirilen döküm ya da sonraki SGK okumasıyla kendiliğinden 'Onaylandı' olur.",
+    "nasil": "Mevzuat › SGK e-Vizite Raporları › Yapılacaklar › çift tık.",
+    "hedef": "eylem:_vizite",
+    "menu": ""
+   }
+  ]
+ },
+ {
   "surum": "1.1.27",
   "tarih": "2026-10-21",
   "maddeler": [
