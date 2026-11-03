@@ -1,5 +1,38 @@
 [
  {
+  "surum": "1.1.31",
+  "tarih": "2026-11-03",
+  "maddeler": [
+   {
+    "baslik": "Personel listesinde 'Tümü' görünümü",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Görünüm seçimine 'Tümü (Aktif + Ayrılan)' eklendi: aktif, yeni giren ve ayrılan herkes tek listede; ayrılanlar soluk ve italik yazılır (üzerine gelince çıkış tarihi). Yıl / ay seçilirse o dönemde çalışmış herkes listelenir (dönem içinde giren ve çıkanlar dahil).",
+    "nasil": "Personel Listesi › Görünüm › Tümü (Aktif + Ayrılan)"
+   },
+   {
+    "baslik": "Özlük dosyasından çıkış + çıkış nedeni",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Personel kartındaki Görev bölümüne 'Çıkış nedeni' (SGK çıkış kodu) eklendi. Aktif personele çıkış tarihi ve nedeni yazılıp KAYDET'e basılınca sağ tık › Çıkış İşlemi ile aynı işlem yapılır: onay, açık zimmet / icra / izin kontrolü, 'Ayrıldı', çıkış görev listesi, izin ücreti / tazminat önerileri. Ayrılan kişide tarih ve neden düzeltilebilir. (Yönetici / İ.K. Müdürü)",
+    "nasil": "Personel kartı › Görev › Çıkış tarihi + Çıkış nedeni › KAYDET"
+   },
+   {
+    "baslik": "Giriş / çıkış tarihi hızlı düzenleme (F2)",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Personel listesinde Giriş Tarihi ve Çıkış Tarihi sütunları F2 ile düzenlenebilir, Excel'den sütun olarak yapıştırılabilir (Ctrl+V), Ctrl+Z ile geri alınır. Çıkış tarihi yalnız ayrılan kişide düzeltilir (çıkış yaptırmak için Çıkış İşlemi, geri almak için Çıkışı İptal Et). SGK'ya bildirge verilmişse ve kapalı dönem varsa uyarılır; PDKS günleri yeniden hesaplanır.",
+    "nasil": "Personel Listesi › tarih hücresi › F2"
+   },
+   {
+    "baslik": "Ağ bilgisayarından kalıcı silme düzeltildi",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Ağdaki bilgisayardan personel kalıcı silinirken 'Ana bilgisayar bu işlemi reddetti' ve ardından 'database is locked' hatası alınıyordu. Düzeltildi. Ayrıca silinen personele bağlı program kullanıcı hesabı artık silinmez (yalnız bağlantısı kalkar) ve KVKK erişim günlüğü korunur; silme yarıda kalırsa hiçbir şey değişmez."
+   }
+  ]
+ },
+ {
   "surum": "1.1.30",
   "tarih": "2026-11-03",
   "maddeler": [
