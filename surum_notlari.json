@@ -1,5 +1,47 @@
 [
  {
+  "surum": "1.1.30",
+  "tarih": "2026-11-03",
+  "maddeler": [
+   {
+    "baslik": "Yanlış yapılan çıkışı iptal etme",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Personel listesinde ayrılan kişiye sağ tık › 'Çıkışı İptal Et': kişi yeniden Aktif olur; çıkış tarihi / kodu temizlenir, çıkışla eklenen taslak izin ücreti / kıdem / ihbar kalemleri ve çıkış görev listesi silinir, PDKS günleri yeniden hesaplanır. Onaylı bordro kalemi ve SGK'ya verilmiş işten ayrılış bildirgesi varsa uyarılır (bildirge SGK'da ayrıca iptal edilmelidir). Personel kartında çıkış tarihi silinince de iptal sorulur - önceden kişi tarihsiz 'Ayrıldı' kalıyor, aktif listeye dönmüyordu.",
+    "nasil": "Personel › Çıkanlar görünümü › kişiye sağ tık › Çıkışı İptal Et.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "PDKS otomatik çekimde kasma / donma giderildi",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "Cihaz verisi başka programın yedek klasöründen alınıyorsa otomatik çekim her turda klasörü baştan okuyup 'son çekim' bilgisini yazıyordu; bu yazma açık ekranlara yeniden hesap yaptırıyordu ve ağdaki her program ayrı tur başlatıyordu. Artık klasörde değişiklik yoksa hiçbir şey yapılmaz; geç / erken kontrolü yalnız yeni basım gelince çalışır; dosyalar adındaki tarihe göre seçilir (eski dosyalar her turda okunmaz). Ayrıca program penceresi 3 saniyeden uzun cevap vermezse nedeni Loglar\\donma.log dosyasına yazılır.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Marka aylık sosyal performans bildirimi (denetim)",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Markanın tedarikçi portalındaki aylık sosyal veri formu: işçi profili, istifa (çıkış koduna göre), ücret ortalamaları ve toplamları (resmi bordro / gerçek ödenen - portala hangisinin gideceğini siz seçersiniz), çalışma saatleri ve haftalık 60/72/90 saat aşımı (PDKS), devamsızlık, eğitim, iş kazası. Program hesaplayamadıkları (şikâyetler, temsilciler, terfi) 'Yapılacaklar'da elle girilir. Ay onaylanınca değerler donar; portalın Excel şablonu tek tuşla doldurulur, ücret / puantaj / kaza / ayrılanlar destek belgeleri üretilir. Ocak'tan bu yana her ay seçilebilir.",
+    "nasil": "Mevzuat › Marka Aylık Sosyal Performans (denetim).",
+    "hedef": "eylem:_sosyal_performans",
+    "menu": "Marka Aylık Sosyal Performans"
+   },
+   {
+    "baslik": "Temsilciler ve Kurullar",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Seçilen / atanan görevliler tek yerde: işçi temsilcisi, İSG çalışan temsilcisi, sendika temsilcisi, İSG / disiplin / yıllık izin kurulu, şikâyet ve diğer komiteler, acil durum ekipleri (İSG'deki ekipler buraya taşındı, İSG ekranı aynen çalışır). Yasal sayı kontrolü (6331 md.20 temsilci sayısı, 50+ çalışanda İSG kurulu, 100+ işçide izin kurulu), işten ayrılan üye, süresi dolan görev ve ilk yardım sertifikası 'Yapılacaklar'da. Görev bitince kayıt silinmez; tutanak kişinin özlüğüne konur, kişi kartında 'Görevler' sekmesinde görünür. Marka formundaki seçilmiş temsilci sayıları buradan gelir. Kurumsal belgeler: seçim duyurusu, oy pusulası, seçim tutanağı (seçilenler tek tuşla görevlendirilir), kişiye görevlendirme yazısı (özlüğe), kurul oluşturma kararı, toplantı tutanağı, pano ilanı, acil durum ekip listesi ve bölüm bölüm Türkçe / İngilizce genel rapor.",
+    "nasil": "Mevzuat › Temsilciler ve Kurullar.",
+    "hedef": "eylem:_temsilciler",
+    "menu": "Temsilciler ve Kurullar"
+   }
+  ]
+ },
+ {
   "surum": "1.1.29",
   "tarih": "2026-11-03",
   "maddeler": [
