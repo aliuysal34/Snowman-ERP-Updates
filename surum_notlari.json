@@ -1,5 +1,30 @@
 [
  {
+  "surum": "1.1.32",
+  "tarih": "2026-11-03",
+  "maddeler": [
+   {
+    "baslik": "Geçmiş çalışma dönemi ekleme",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Şu an çalışan bir kişinin daha önce girip çıktığı dönem artık kaydedilebiliyor (önceden 'Aynı kişi zaten çalışıyor' uyarısıyla kaydedilmiyordu). Kişiye sağ tık › 'Geçmiş Çalışma Dönemi Ekle': bilgileri kopyalanmış yeni kartta o dönemin giriş, çıkış tarihi ve çıkış nedeni girilir, kart 'Ayrıldı' olarak kaydedilir. Yeni Personel formunda aynı T.C. girilirse de 'geçmiş dönem mi?' diye sorulur. Aynı kişinin dönemleri çakışamaz. PDKS: aynı kişinin birden çok çalışma dönemi kartı varsa cihaz basımı, tarihinin düştüğü dönemin kartına gider (önceden hep sicil numarasının olduğu karta gidiyordu); böylece o ayların puantajı ve bordrosu doğru kartla hesaplanır. Güncellemeden sonraki ilk açılışta mevcut basımlar da bir kez dağıtılır (onaylı / kilitli aylara dokunulmaz, İşlem Geçmişi'ne yazılır).",
+    "nasil": "Personel Listesi › kişiye sağ tık › Geçmiş Çalışma Dönemi Ekle"
+   },
+   {
+    "baslik": "Ağdaki bilgisayarlarda donma azaltıldı",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Personel kartı kaydı (PDKS no eşleşmesi), vardiya atama, toplu bilgi güncelleme ve F2 ile giriş / çıkış tarihi düzeltmesinden sonraki puantaj yeniden hesabı artık ana bilgisayarda tek seferde yapılıyor; önceden ağdaki bilgisayar binlerce küçük sorgu gönderip pencere birkaç saniye donuyordu. F2 tarih düzeltmesinde hesap arka planda yapılır, seri girişe hemen devam edilir."
+   },
+   {
+    "baslik": "PDKS numarası yazılınca ekranda ne yapıldığı görünür",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Personel listesinde F2 ile PDKS sicil no yazılınca cihaz basımlarının aktarımı arka planda yapılır; pencerenin sağ altında '⏳ aktarılıyor' ve bitince '✓ şu kadar basım aktarıldı' kutusu görünür, seri girişe devam edilebilir (art arda yazılan numaralar için tek seferde yapılır). Personel kartı ve Toplu Bilgi Güncelleme'de de işlem sürerken ekranda yazar. Ağdaki bilgisayarlarda aktarımı ana bilgisayar yapar."
+   }
+  ]
+ },
+ {
   "surum": "1.1.31",
   "tarih": "2026-11-03",
   "maddeler": [
