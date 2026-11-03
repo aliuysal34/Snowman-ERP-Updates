@@ -1,5 +1,65 @@
 [
  {
+  "surum": "1.1.29",
+  "tarih": "2026-11-03",
+  "maddeler": [
+   {
+    "baslik": "Programın yeni adı: Uyras Personel Takip",
+    "tur": "yeni",
+    "kitle": "hepsi",
+    "aciklama": "Program artık Uyras markasıyla 'Uyras Personel Takip' adını taşır: yeni logo pencere başlığında, görev çubuğunda, masaüstü simgesinde ve giriş ekranında. Verileriniz, ayarlarınız, kurulum klasörü ve güncellemeler aynen sürer; hiçbir şey yapmanız gerekmez. Masaüstü simgesi Windows'un simge önbelleği yüzünden birkaç dakika (ya da bilgisayar yeniden başlayana kadar) eski görünebilir.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "PDKS: diğer programın yedek klasörü otomatik okunur",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Cihazları başka bir PDKS programı da okuyorsa ve verileri onun yedek (Backup) klasöründen alıyorsanız: 'Dosya ile' tanımlı ve 'başka program da okuyor' işaretli cihaz artık Tümünü Çek'e ve otomatik çekime girer, klasörün son 3 gününü okur (önceden yalnız elle 'Klasörden Aktar' ile geliyordu). Klasördeki uzantısız günlük dosyalar (ör. '2026-11-03') da okunur. Cihazlara hiç bağlanılmaz.",
+    "nasil": "PDKS Ayarları › Cihazlar › Otomatik çekim süresini seçin.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "PDKS numaraları: hatalı numaraları toplu düzeltme",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Toplu Bilgi Güncelleme'de 'Sadece boş alanları doldur' kapalıyken Excel'deki PDKS numaraları esas alınır: numara yanlışlıkla başkasındaysa artık atlanmaz; dosyada olmayan kişinin hatalı numarası boşaltılıp bildirilir. Numarası değişen kişinin eski (hatalı) numarayla aldığı basımlar geri alınır ve doğru kişiye taşınır, günler yeniden hesaplanır (kilitli aylara dokunulmaz). Yeni personel kartında PDKS numarası artık kendiliğinden verilmez - cihazdaki numara yazılır.",
+    "nasil": "Personel › Toplu Bilgi Güncelleme › yalnız 'PDKS Sicil No' seçili › Excel'den İçe Aktar.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "SGK güvenlik kodu penceresi her durumda görünür",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Otomatik SGK sorgusu kodu okuyamayıp açık programa sorduğunda pencere; program simge durumundayken gizleniyor, başka bir form açıkken tıklanamıyordu - artık her şeyin üstünde açılır. Kod sorulacak açık program yokken (ör. gece) kırmızı 'kod girilemedi' bildirimi yazılmaz: sorgu bekletilir, yetkili biri programı açınca kendiliğinden yeniden denenir. Birine sorulup girilmezse bildirimde kime sorulduğu yazar.",
+    "nasil": "",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Ana Sayfa: şu an raporlu / izinli olanlar",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Personel Olayları kartı artık şu an raporda ya da izinde olup 7 günden sonra dönecek personeli de gösterir (7 gün içinde dönenler 'izinden dönüyor' satırında). Kart: önümüzdeki 7 gün izne çıkacak / dönecek / ayrılacak personel ve şu an raporlu / izinli olanlar.",
+    "nasil": "Ana Sayfa › Personel Olayları.",
+    "hedef": "",
+    "menu": ""
+   },
+   {
+    "baslik": "Ana bilgisayarı güncelleme: açık pencere açıklaması",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Ağdaki bilgisayardan 'Ana Bilgisayarı Şimdi Güncelle' istendiğinde ana bilgisayarda program açıksa bu artık baştan söylenir: güncelleme indirilir, ana bilgisayardaki programda 'Güncelleme Hazır' sorusu çıkar; 'Şimdi Kur' ya da programı kapatmak kurulumu başlatır.",
+    "nasil": "Sistem › Güncelleme (ağdaki bilgisayar).",
+    "hedef": "",
+    "menu": ""
+   }
+  ]
+ },
+ {
   "surum": "1.1.28",
   "tarih": "2026-10-23",
   "maddeler": [
