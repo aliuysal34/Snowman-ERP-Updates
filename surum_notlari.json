@@ -1,5 +1,73 @@
 [
  {
+  "surum": "1.1.33",
+  "tarih": "2026-11-03",
+  "maddeler": [
+   {
+    "baslik": "Personel listesinde 'Dönem (Bordro Ayı)' görünümü - bordroyla birebir liste",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Bir ayı seçin (ör. Şubat 2026): o ay en az bir gün çalışan herkes tek listede görünür - bordroyla aynı ölçüt, aynı kişiler. 'Dönem Durumu' sütunu tüm ay çalışanı, ay içinde gireni / çıkanı tarihiyle; 'Bordroda' sütunu onaylı bordroda olup olmadığını yazar. Üstte ay başı, giren, çıkan, ay sonu ve bordrodaki kişi sayısı; onaylı bordroda olup listede olmayan (kartı silinmiş / tarihi değişmiş) kişi varsa uyarı. Arama, süzgeç, Excel ve yazdır bu görünümde de çalışır.",
+    "nasil": "Personel Listesi › Görünüm: 📅 Dönem (Bordro Ayı) › Yıl / Ay seçin",
+    "hedef": "sayfa:personel",
+    "menu": "Personel Listesi"
+   },
+   {
+    "baslik": "Ana bilgisayar güncellenirken ağdaki bilgisayarda 'bekleyin' penceresi",
+    "tur": "onemli",
+    "kitle": "hepsi",
+    "aciklama": "Ana bilgisayar kendini güncelleyip yeniden başlarken ağdaki bilgisayarlarda artık hata pencereleri çıkmaz; 'Ana bilgisayar güncelleniyor ya da yeniden başlatılıyor - lütfen bekleyin' penceresi açılır ve ana bilgisayar yoklanır. Aynı sürümle dönerse pencere kapanır, çalışmaya devam edilir (bağlantı koptuğu sırada yapılan son işlemin kontrol edilmesi hatırlatılır). Yeni sürümle dönerse '⬇ Şimdi Güncelle' düğmesi çıkar; güncelleme ana bilgisayardan alınır, program kendiliğinden yeniden açılır. Program açılırken ana bilgisayara ulaşılamazsa da önce aynı pencereyle beklenir."
+   },
+   {
+    "baslik": "Mükerrer (çift) personel kartını birleştirme",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Aynı kişinin aynı çalışma dönemi için iki kartı varsa, çalışma izi olduğu için kopya kart yasal saklama süresi nedeniyle silinemiyordu. Artık kişiye sağ tık › 'Mükerrer Kartı Birleştir': kalacak kartı seçersiniz, kopyadaki tüm kayıtlar (PDKS basımları, izin, bordro, evrak, zimmet...) kalan karta taşınır, kalan kartta boş olan bilgiler (ör. PDKS no) kopyadan doldurulur ve boşalan kopya silinir; hiçbir kayıt kaybolmaz. Ayrı çalışma dönemleri ve iki kartta da aynı aya ait bordro / ödeme varsa birleştirilmez; kartların durumu farklıysa (Aktif / Ayrıldı, SGK çıkış bildirimi) uyarılır. Yönetici / İ.K. Müdürü.",
+    "nasil": "Personel Listesi › kişiye sağ tık › Mükerrer Kartı Birleştir"
+   },
+   {
+    "baslik": "Bordroda ayın onayını kaldırma (birden çok ay birden)",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Onaylı ayda puantaj yeniden hesaplanmadığı için geçmiş ay düzeltmeleri bordroya yansımıyordu, onay kişi kişi açılamıyordu. Artık seçtiğiniz ayların bütün bordro onayları gerekçeyle tek seferde kalkar: rakamlar silinmez (Taslak), kümülatif vergi matrahı geri alınır, istenirse PDKS aylık puantaj kilidi ve ayın maaş kilitleri de açılır, ayın puantajı yeniden hesaplanır. Düzeltmeden sonra Onay Merkezi'nden yeniden onaylanır. Yönetici / İ.K. Müdürü; İşlem Geçmişi'ne yazılır.",
+    "nasil": "Onay Merkezi › ↩ Ay Onayını Kaldır  ya da  Bordro › tabloda sağ tık › Ayın Bordro Onayını Kaldır"
+   },
+   {
+    "baslik": "Saklama süresi engeline rağmen personel silme (PDKS basımları korunur)",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Eski kayıtlar girilirken yanlış açılmış bir kart, SGK bildirimi / puantajı olduğu için silinemiyordu. Artık Yönetici gerekçe yazarak 'Yine de Sil' diyebilir. Kişinin PDKS cihaz basımları silinmez: aynı PDKS numarası başka personelde tanımlıysa ona, aynı kişinin (T.C. / ad soyad) başka kartı varsa ona aktarılır (PDKS numarası boşsa o karta yazılır); hedef yoksa tanımsız basımlara düşer. İşlem gerekçesiyle İşlem Geçmişi'ne yazılır.",
+    "nasil": "Personel Listesi › Sil › Tamamen Sil › Yine de Sil"
+   },
+   {
+    "baslik": "BES değişiklik geçmişi ve yazılı talep (dilekçe) takibi",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "BES tutarı, oranı, türü değişince ya da cayma işlenince artık hangi aydan geçerli olacağı ve personelin yazılı talebi sorulur: imzalı dilekçe hemen eklenebilir, 'bekleniyor' olarak takip edilebilir ya da 'gerekmez' işaretlenir; talep dilekçesi doldurulmuş olarak yazdırılır. Her değişiklik geçmişte kalır (eski → yeni, geçerli ay, talep tarihi, belge, kaydeden). Bordro her ay O AYDA GEÇERLİ tanımla hesaplanır - önceden tutar değişince onaylanmamış geçmiş aylar da yeni tutarla hesaplanıyordu. İmzalı dilekçe özlüğe 'BES Değişiklik Talep Dilekçesi' olarak kaydedilir; dilekçesi beklenenler BES listesinde kırmızı görünür.",
+    "nasil": "Personel kartı › BES › Değişiklik Geçmişi  ya da  Finans › BES › sağ tık › Değişiklik Geçmişi"
+   },
+   {
+    "baslik": "Zorla silmede 'PDKS kayıtları da silinsin' seçeneği",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Saklama engeline rağmen silmede kutu işaretlenirse kişinin PDKS basımları tanımsıza düşürülmeden / başkasına aktarılmadan kişiyle birlikte silinir (komple silme). İşlem Geçmişi'ne yazılır."
+   },
+   {
+    "baslik": "Gerçek Maaş ve SSK Maaşı: Net ya da Brüt girişi",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "Özlük kartında her iki maaşın yanında artık Net / Brüt seçimi var; altında bu ayın karşılığı (net girilene brüt, brüt girilene net) anlık görünür. Brüt girilen SSK maaşında SGK ve vergiler doğrudan bu brütten hesaplanır. Brüt girilen gerçek maaşta brüt sabit kalır, ödenecek net her ay o ayın vergisiyle hesaplanır (vergi dilimi yükseldikçe net düşer). Kıdem / ihbar tazminatı ve izin ücreti brütü doğrudan kullanır; avans limiti, icra, fazla mesai / serbest zaman ücreti, maaş toplamları ve icra cevap yazısı net karşılığı kullanır. Biten ayın maaş kilidi Net / Brüt türünü de saklar. Mevcut bütün kayıtlar Net kalır - hiçbir şey değişmez. F2 hızlı düzenlemede, listede ('Brüt' etiketi, Net/Brüt sütunları), toplu zamda (zam girildiği türe uygulanır), toplu personel aktarımında ('Maaş Net/Brüt' sütunu) ve dilekçe değişkenlerinde (gercek_maas_brut, maas_brut) de var.",
+    "nasil": "Personel › özlük kartı › Ücret › tutarın yanındaki Net / Brüt"
+   },
+   {
+    "baslik": "Yeni personel kaydında çıkış tarihi (geriye dönük kayıt)",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Yeni personel kartında çıkış tarihi ve nedeni alanları artık açık. Eski (ayrılmış) bir personeli kaydederken giriş ve çıkış tarihini birlikte yazın - kart doğrudan 'Ayrıldı' olarak kaydedilir, işe giriş görevleri açılmaz, o tarihlerdeki PDKS basımları karta dağıtılır. Çalışmaya devam eden personelde boş bırakılır."
+   }
+  ]
+ },
+ {
   "surum": "1.1.32",
   "tarih": "2026-11-03",
   "maddeler": [
