@@ -1,5 +1,59 @@
 [
  {
+  "surum": "1.1.35",
+  "tarih": "2026-11-04",
+  "maddeler": [
+   {
+    "baslik": "Eşleştirme ekranı dosyadan gelen basımları da gösterir",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Basımları dosyadan okunan cihazlarda Aktarılan Basım sütunu boş kalıyor, 'Eşleşenler' ve 'Tümü' süzgeçleri personele bağlı numaraları eksik gösteriyordu. Artık dosyadan gelen basımlar da sayılır, ilk / son tarihleri görünür. Numarası kartında da yazılı olan 'bu cihaza özel' satırda 'Eşleşmeyi Geri Al' yalnız fazladan kaydı siler, basımlar personelde kalır. Puantaj ve bordro etkilenmez.",
+    "nasil": "PDKS Ayarları › Cihazlar ve Ham Veri › Eşleştirme"
+   },
+   {
+    "baslik": "Personel adresi alanlara bölündü",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Personel kartında adres artık il, ilçe, mahalle, sokak, dış kapı ve iç kapı olarak girilir; belgelerdeki tam adres bunlardan oluşur. Mevcut adresler otomatik bölünür, eski metin değişmez. Eksik ya da yazımı şüpheli olanlar Adres Kontrolü ekranında düzeltilir.",
+    "nasil": "İK › Adres Kontrolü"
+   },
+   {
+    "baslik": "'Sütunlar' menüsü ekrana sığıyor",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Sütun sayısı çok olan listelerde (ör. Personel Listesi) Sütunlar menüsünün altı ekran dışında kalıyor, son sütunlara ve 'Varsayılana Dön' düğmesine ulaşılamıyordu. Artık liste kendi içinde kayar, düğme hep görünür. Bütün liste ekranlarında geçerli."
+   },
+   {
+    "baslik": "Eşleştirme'de tanımsız basım silme hızlandı",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Birden çok numara seçip sağ tıklayınca seçim tek satıra iniyor, numaralar tek tek silinmek zorunda kalıyordu; her silmeden sonra da ekran özellikle ağdaki bilgisayarlarda donuyordu. Artık seçim korunur, toplu silme ana bilgisayarda tek seferde yapılır, liste çok daha hızlı yenilenir.",
+    "nasil": "PDKS Ayarları › Cihazlar ve Ham Veri › Eşleştirme › satırları seçip sağ tık"
+   },
+   {
+    "baslik": "Bugün ekranı sadeleşti: sayılar artık toplanıyor",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Üstte tek satır: Bugün Beklenen = İçeride + Geldi ve Gitti + Gelmedi + İzinli / Raporlu (sabah vardiya başlarken Bekleniyor da görünür). Her kişi tek kutuda sayılır. Çıkıp geri dönen kişi artık içeride sayılır (Tahliye Listesi'yle aynı kural). Geç gelenler toplama girmez, gelenlerin altında 'zamanında / geç' olarak yazar. İdari / Beyaz Yaka personeli ayrı satırda: kaç kişiden kaçının bastığı görünür. Kutuya tıklayınca Günlük Takip o kişilerle açılır; Günlük Takip'e 'Geldi ve gitti', 'Bekleniyor' ve 'İdari' süzgeçleri eklendi. Vardiya doluluğu kutusu kaldırıldı (vardiya bazında bakış Günlük Takip'in vardiya süzgecinde). Puantaj ve bordro değişmez, yalnız ekrandaki sayım değişti.",
+    "nasil": "PDKS › Bugün"
+   },
+   {
+    "baslik": "Yeni modül: Servis Takip",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Personel servislerinin takibi. Güzergahları kullanıcı ekler / çıkarır (firma, plaka, şoför, kapasite, saatler). Personel servise ve durağa tarihli atanır, değişince eski kayıt geçmişte kalır. Yeni giren personel 'atanmamış' uyarısıyla çıkar, servis kullanmayan nedeniyle (şirket aracı, kendi aracı, yol parası) 'Kullanmıyor' işaretlenir, ayrılan listeden düşer. Servis Çizelgesi (kim hangi serviste), şoför listeleri (personel telefonu ve bölüm isteğe bağlı) ve aylık maliyet (güzergah, firma, bölüm; ek sefer; KDV) Excel / PDF alınır. Excel'den toplu aktarım vardır. Yeni 'Servis Sorumlusu' rolü yalnız bu modülü görür, yetkiler Yetki Matrisi'nden değiştirilebilir. Bordroya bağlı değildir.",
+    "nasil": "İK › Servis Takip"
+   },
+   {
+    "baslik": "Günlük Takip'te sağ panel doğru kişiyi gösterir",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Süzgeç değişince listede ilk satır seçili kalsa da sağ panelde önceki kişinin bilgileri duruyordu. Artık panel her zaman seçili kişiyi gösterir. Kayıtlar ve hesaplar etkilenmedi; yalnız görünüm hatasıydı.",
+    "nasil": "PDKS › Günlük Takip"
+   }
+  ]
+ },
+ {
   "surum": "1.1.34",
   "tarih": "2026-11-04",
   "maddeler": [
