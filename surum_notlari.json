@@ -1,5 +1,74 @@
 [
  {
+  "surum": "1.1.36",
+  "tarih": "2026-11-05",
+  "maddeler": [
+   {
+    "baslik": "Tutar girişi düzeltildi: '9.000' artık 9.000 TL",
+    "tur": "onemli",
+    "kitle": "maas",
+    "aciklama": "Maaş, avans, sabit kalem ve toplu zam ekranlarında binlik noktayla yazılan tutar yanlış okunabiliyordu: '9.000' yazınca 9 TL kaydediliyordu. Artık 9.000 TL okunur, okunamayan tutar kaydedilmez. Daha önce noktayla girilmiş küçük görünen tutarları kontrol etmenizi öneririz.",
+    "nasil": "Personel Listesi'nde maaş sütununa, Finans'ta avans ve sabit kalem listelerine bakın"
+   },
+   {
+    "baslik": "Servis artık ayrı menüde ve plan otomatik",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Servis, üst menüde kendi yerine taşındı: Plan, Servisler, Personel Ulaşımı, Maliyet ve Ayarlar. Program personel adreslerinden araç sayısını, güzergahı, durakları ve servis adlarını önerir; yayınlamadan hiçbir atama değişmez. Adresler program içinde işlenir, dışarı gönderilmez. Süreler trafiksiz tahmindir; önce birkaç hatla denemenizi öneririz.",
+    "nasil": "Servis › Plan",
+    "hedef": "sayfa:servis"
+   },
+   {
+    "baslik": "Yeni personel için servis önerisi",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Servisi olmayan kişi 'Servis Bekleyen' kartına düşer. Program en yakın servisleri durak, uzaklık ve boş koltukla gösterir; onaylayınca kişi servise alınır. Bekleyen sayısı Servis menüsünde ve Plan ekranında görünür. Program kimseyi kendiliğinden servise almaz.",
+    "nasil": "Servis › Personel Ulaşımı › Servis Bekleyen",
+    "menu": "Personel Ulaşımı"
+   },
+   {
+    "baslik": "Servis kullanmayanı işaretlemek kolaylaştı",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Kişiyi seçip 'Servis Kullanmıyor' düğmesinden nedenini seçin: kendi aracı, şirket aracı, yol parası, araç paylaşımı ya da diğer. Birden çok kişi seçilebilir. Servisler ekranında da kişi seçilince aynı düğme çıkar. Yazdırma işleri tek 'Yazdır' menüsünde toplandı.",
+    "nasil": "Servis › Personel Ulaşımı ya da Servis › Servisler"
+   },
+   {
+    "baslik": "Servis çıktıları antetli",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Şoför listeleri, servis listesi ve maliyet raporunun her sayfasında firma logosu, unvan, adres ve iletişim bilgileri yer alır. Bilgiler Firma Ayarları'ndan gelir.",
+    "nasil": "Servis › Servisler › Yazdır"
+   },
+   {
+    "baslik": "Gelmeyenler listesi: 'Çıkış Yapılacak' seçeneği",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Elle 'İzinli' seçilen devamsız artık listenin üstünde kalır; alt bölüme yalnız raporlu ve tanımlı izinliler (yıllık, mazeret) iner. 'Çıkış Yapılacak' seçilen kişi liste çıktısına basılmaz; kişi işe gelene ya da başka tespit seçilene kadar işaret sonraki günlerde de sürer. Bu seçenek işten çıkışı yapmaz, çıkış ayrıca yapılır.",
+    "nasil": "PDKS › Bugün › Gelmeyenler Listesi › Yetkili / sebep gir"
+   },
+   {
+    "baslik": "Yetkiler sıkılaştırıldı",
+    "tur": "onemli",
+    "kitle": "ust",
+    "aciklama": "Firma ve banka ekranları, yedek alma, tahliye listesi ve bazı menü işlemleri artık rol kontrolünden geçer. Kurum şifrelerini yalnız maaş görme yetkisi olan roller görür. Parola değişince o kullanıcının açık oturumları kapanır. Daha önce bu ekranları açabilen bir kullanıcı yetki uyarısı alırsa rolünü kontrol edin.",
+    "nasil": "Sistem › Yetki Matrisi"
+   },
+   {
+    "baslik": "Güncelleme ve yedek daha güvenli",
+    "tur": "iyilestirme",
+    "kitle": "yonetici",
+    "aciklama": "Yarım inen paket kurulmaz, disk doluysa önceden uyarılır, kurulamayan sürüm en çok 3 kez denenir. Sürüm öncesi yedek alınamazsa bir sonraki açılışta yeniden denenir. Excel çıktılarında hücreye yazılan metin formül olarak çalışmaz."
+   },
+   {
+    "baslik": "Ekranda beliren küçük pencereler giderildi",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Servis, Bordro ve Ay Onayı ekranları ilk açılırken bir an görünüp kaybolan küçük pencereler artık çıkmaz."
+   }
+  ]
+ },
+ {
   "surum": "1.1.35",
   "tarih": "2026-11-04",
   "maddeler": [
