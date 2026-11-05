@@ -1,5 +1,46 @@
 [
  {
+  "surum": "1.1.37",
+  "tarih": "2026-11-05",
+  "maddeler": [
+   {
+    "baslik": "e-Vizite onay dökümü doğru rapora bağlanıyor",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "Aynı kişinin ardışık raporlarında SGK takip numarası ortak olabiliyor; indirilen onay dökümü bazen sonraki rapora bağlanıp süren raporu 'Onaylandı' gösteriyordu. Artık döküm tarihlerine göre bağlanır. Daha önce yanlış bağlanmış döküm e-Vizite ekranı açılınca doğru rapora taşınır.",
+    "nasil": "Personel Olayları › e-Vizite ekranını açın; düzeltilen varsa program bildirir"
+   },
+   {
+    "baslik": "Marka aylık formu: denetçi kuralları ve kanıt Excel'i",
+    "tur": "yeni",
+    "kitle": "ust",
+    "aciklama": "Çalışan sayısı artık ay sonunda çalışan imalat personeli. Ayın bordro Excel'i yüklenebilir; hesaplar başlıklardan yeniden yapılır, BES ve benzeri kesinti hak ediş mutabakatında ayrı gösterilir. Devamsız gün, çalışma döneminde gelinmeyen her günü sayar. 'Kanıt Excel'i' her değerin kişi, gün ve hafta dökümünü üretir.",
+    "nasil": "Mevzuat › Marka Aylık Sosyal Performans"
+   },
+   {
+    "baslik": "Raporlu günde çalışılan günün ücreti artık kesilmiyor",
+    "tur": "onemli",
+    "kitle": "maas",
+    "aciklama": "Rapor gününde giriş ve çıkış basımı olan kişi o gün çalışmış sayılır: ücreti kesilmez, SGK primi ödenir (geç / erken kesintisi normal günlerdeki gibidir); yalnız çalışmadığı günler kesilir. Tek basım çalışma sayılmaz. Onaylı ve kilitli aylar değişmez. Geçmişe dönük düzeltme yalnız bu ay ve önceki ay için, açık aylarda yapılır; daha eski aylarda fark varsa elle değerlendirin. Bu ve önceki ayın bordrosunu hesapladıysanız yeniden kontrol edin.",
+    "nasil": "PDKS › Aylık Puantaj ve Bordro"
+   },
+   {
+    "baslik": "e-Vizite: bildirimde seçenek önceden işaretli gelmiyor",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Kart basımı olan raporda 'Çalıştı' önceden seçili geliyordu. Artık çalıştı / çalışmadı seçimini siz yaparsınız; seçmeden gönderilmez.",
+    "nasil": "e-Vizite › SGK'ya bildirim"
+   },
+   {
+    "baslik": "e-Vizite: raporluyken kart basımı için 'Kontrol Ettim'",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "SGK'da onaylı ama raporlu gününde kart basımı olan satırlar artık 'SGK'da onaylı · kart basımı var' yazar. Çift tıkla basım saatlerini görür, Günlük Takip'i o günde açar ya da sebebini seçip 'Kontrol Ettim' dersiniz; kim ne zaman kontrol etti kayda geçer. 'Kendi isteğiyle çalıştı' seçilirse personelin imzalayacağı beyan açılır. 'Çalışmadı' seçilirse gün raporlu işlenir ve kesilir. Kayıt SGK'ya gönderilmez.",
+    "nasil": "e-Vizite › Yapılacaklar › satıra çift tık"
+   }
+  ]
+ },
+ {
   "surum": "1.1.36",
   "tarih": "2026-11-05",
   "maddeler": [
