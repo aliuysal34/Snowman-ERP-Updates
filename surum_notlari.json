@@ -1,5 +1,269 @@
 [
  {
+  "surum": "1.1.39",
+  "tarih": "2026-11-06",
+  "maddeler": [
+   {
+    "baslik": "Şoförler için yeni servis yolcu listesi",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Servis listesi firma logosu, trafik denetimi açıklaması, plaka ve şoför, yolcu tablosu, altta firma bilgileri ve QR kod düzeninde basılır. Her güzergâh kendi sayfasındadır. QR görseli çıktı penceresinden bir kez yüklenir.",
+    "nasil": "Servis ekranı › Yazdır › Servis Listesi"
+   },
+   {
+    "baslik": "Hukuki belge metinleri düzeltildi",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "Babalık izni dilekçesi 10 gün oldu. İbraname Borçlar Kanunu md.420'ye göre yenilendi, ibra tarihi alanı eklendi. Sözleşmede arabulucu, telafi süresi, ücret ödeme ve yetkili mahkeme maddeleri düzeltildi. Disiplinde fesih ve ücret kesme kendi belgesini üretiyor, savunma süresi 3 iş günü oldu. Elle düzenlediğiniz şablonlar değiştirilmez, onları ayrıca gözden geçirin.",
+    "nasil": "Dilekçeler, Personel › Sözleşme, Disiplin"
+   },
+   {
+    "baslik": "Programda tek tip yazım",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Etiket, düğme ve sütun başlıkları Başlık Biçimi ile yazılıyor. T.C. Kimlik No, E-posta, Hak Ediş, Ad Soyad, Güzergâh, Bölüm, İK, TL ve Vazgeç her yerde aynı yazılıyor; pencere adları menüdeki adla aynı. Kanunda geçen fazla çalışma, işçi temsilcisi gibi resmî adlar belgelerde korunur.",
+    "nasil": "Bütün ekranlar"
+   },
+   {
+    "baslik": "Savunma süresi seçilebiliyor, babalık izni takvim günü",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Savunma istem yazısında süre seçilir, varsayılan 24 saat. Fesih belgesi üretilirken olaydan 6 iş günü geçtiyse uyarır. Babalık izni takvim günü sayılır. Avans dilekçesinde ayrı taksit sayısı alanı var. SGK hatalarında ekranda Türkçe mesaj görünür, ayrıntı kayıt dosyasına yazılır.",
+    "nasil": "Disiplin, Dilekçeler, İzin"
+   },
+   {
+    "baslik": "Gizlilik ve imha sıkılaştırıldı",
+    "tur": "onemli",
+    "kitle": "yonetici",
+    "aciklama": "Toplu kişisel veri çıktıları erişim günlüğüne yazılır. Kalıcı silme dava, disiplin, muayene ve kaza dosyalarını da siler. Dava evrakı yalnız Yönetici, Patron ve İK Müdürü'ne görünür; ağda belge ve dava okuması da rol denetiminden geçer. Ağda değiştirilen arşiv belgesinin eski hali saklanır.",
+    "nasil": "Sistem › Kullanıcı ve Güvenlik"
+   },
+   {
+    "baslik": "Belgelerde eksik basılan veriler düzeltildi",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Ali & Veli gibi unvanlar artık eksik basılmıyor, küçüktür işareti içeren metin kaybolmuyor. Dilekçede telefon yerine acil telefon basılmıyor. Görev listesi, dava, 360 derece ve anket raporları kurumsal antetli. Başlık satırı her sayfada tekrarlanıyor, kalabalık kurullarda her üyenin imza yeri var. Tarih ve yazım hataları giderildi.",
+    "nasil": "Belgeler ve raporlar"
+   },
+   {
+    "baslik": "Yedek ikinci diske gidiyor",
+    "tur": "iyilestirme",
+    "kitle": "yonetici",
+    "aciklama": "Bilgisayarda ikinci sabit disk varsa yedekler kendiliğinden oraya alınır, yoksa program klasöründe kalır. Kurtarma anahtarı kâğıda yazdırılabilir ya da istenen yere dosya olarak kaydedilebilir.",
+    "nasil": "Sistem › Klasör, Şifre ve Yedek Güvenliği"
+   },
+   {
+    "baslik": "Sosyal performansta kanıt güncel veriyle",
+    "tur": "iyilestirme",
+    "kitle": "maas",
+    "aciklama": "Onaylı ayın kanıt Excel'leri de ayın güncel verisiyle hesaplanır. Destek Belgeleri düğmesi kaldırıldı; aynı işi Tablo ve Kanıt Excel'leri görür.",
+    "nasil": "Denetim › Sosyal Performans"
+   },
+   {
+    "baslik": "Denetim evraklarında tutarlılık",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Ramak kala kaydı sonraki aylara devretmiyor. Sonradan çözülen şikâyet geçmiş ayın imzasını bozmuyor. Çıktıdan sonra kayıt değiştiyse eski kâğıt İmzalı görünmüyor, sorulur. Toplantı ve eğitim imzası kayıt kayıt izleniyor, içerik değişince Değişti olur. Geçmiş ayın kurul durumu o aya göre hesaplanıyor. Aylık dosya eksik dosyayı söylüyor ve atama yazılarını da içeriyor.",
+    "nasil": "Denetim menüsü"
+   },
+   {
+    "baslik": "Belgeler de yedekleniyor",
+    "tur": "onemli",
+    "kitle": "yonetici",
+    "aciklama": "Arşiv, özlük, imzalı evrak ve dava dosyaları her gün şifreli yedekleniyor. Yalnız yeni ve değişen dosyalar eklenir, disk şişmez. Harici diske yedek alınabilir, istenen günden geri yüklenebilir. Yedek klasörü programla aynı diskteyse disk arızasında yedek de gider; başka disk seçin.",
+    "nasil": "Sistem › Veri ve Yedekleme › Belge Yedeği"
+   },
+   {
+    "baslik": "Sözleşmede ücret SSK maaşından geliyor",
+    "tur": "yeni",
+    "kitle": "maas",
+    "aciklama": "İş sözleşmesinin ücret maddesine SSK maaşı Net ya da Brüt olarak yazılır; SSK maaşı boşsa asgari ücret yazar. Çalışma yeri firmanın ilinden, Mersis No firma bilgisinden gelir. Maaş göremeyen rolde tutar boş çıkar, elle doldurulur.",
+    "nasil": "Personel › Sözleşme Yazdır"
+   },
+   {
+    "baslik": "Yetki ve gizlilik sıkılaştırıldı",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "Şikâyette kayıtlı başvuranı yalnız tüm firmayı gören roller görür. Akıllı Evrak'tan işten çıkış yetki ister. Disiplin Çizelgesi ve Aylık Dosya, Yetki Matrisi'nde Disiplin kapalıysa açılmaz; bölümü kısıtlı kullanıcı yalnız kendi bölümünü görür, tüm firmayı kapsayan çıktıyı basamaz. Çizelgeden kayıt silmek yönetim yetkisi ister.",
+    "nasil": "Denetim menüsü, Akıllı Evrak"
+   },
+   {
+    "baslik": "Türkçe büyük harf hataları giderildi",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Pencere başlıkları, Excel çıktılarındaki ay adları, icra yazısındaki daire adı, görev belgeleri, kişi adları ve banka ödeme açıklaması (NİSAN 2026 MAAŞ) doğru yazılıyor.",
+    "nasil": "Bütün ekranlar"
+   },
+   {
+    "baslik": "Uzun belgeler sayfalara yayılıyor",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Önizlemeden yazdırılan uzun formlar (eğitim formu, görev listesi, disiplin çizelgesi gibi) tek sayfaya küçültülmüyor. Yazı okunur boyutta kalır, başlık satırı her sayfada tekrarlanır, imza son sayfanın altına gelir.",
+    "nasil": "Bütün önizleme pencereleri › Yazdır"
+   },
+   {
+    "baslik": "Bazı düğme ve çıktı hataları giderildi",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Gelmeyenler Listesi yazdırma ve PDF çıktısı çalışıyor. Aylık Disiplin Çizelgesi'nde kayıt açılıyor. Temsilci seçiminde aday eklenebiliyor. Güncellemeyi Başlat önce onay soruyor. Dava listesinde süzgeç değişince yanlış dosya seçilmiyor.",
+    "nasil": "İlgili ekranlar"
+   },
+   {
+    "baslik": "Tablo sütunları sabit duruyor",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Sütunlar liste değiştikçe açılıp kapanmıyor. İsim sütunu en uzun ada göre, diğerleri içeriğe uygun genişlikte kalır. Sütun çizgisinden çekerek genişletip daraltabilirsiniz, verdiğiniz genişlik saklanır. Çizgiye çift tıklayınca sütun içeriğine sığar.",
+    "nasil": "Bütün tablolarda"
+   },
+   {
+    "baslik": "Servis kapatırken tarih ve yolcu kaydırma",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Servis kapatılırken kapanış tarihi seçilir. İleri tarihte servis o güne kadar çalışır, yeni kişilere önerilmez. İstenirse yolcular kapanış gününden itibaren önerilen servislere geçirilir, yeri çıkmayanlar listelenir. Plan iptal edilebilir.",
+    "nasil": "Servis › Servisler › Diğer › Sil › Pasife Al"
+   },
+   {
+    "baslik": "Servise başlama tarihi düzeltilebiliyor",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Servisler ekranında yolcu listesine Başlangıç sütunu geldi. Kişi ya da kişiler seçilip Başlangıç düğmesiyle tarih düzeltilir; önceki servis kaydının bitişi kendiliğinden uyar. Personel Ulaşımı'ndaki kişi panelinde de var.",
+    "nasil": "Servis › Servisler ya da Personel Ulaşımı › Başlangıç"
+   },
+   {
+    "baslik": "Servis çizelgesi araç araç",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Servis listesi (tümü) çıktısında her araç yeni sayfada başlar, satırlar tek satırdır. Araç sayfaya sığmazsa başlığıyla sonraki sayfada sürer.",
+    "nasil": "Servis › Yazdır › Servis listesi (tümü)"
+   },
+   {
+    "baslik": "Yazdırma menüsü sadeleşti",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Bütün yazdırma menülerinde 'Yazıcı seçerek' yerine 'Yazdır' yazıyor, 'Varsayılan yazıcıya gönder' kaldırıldı. Yazdır penceresi Windows'un varsayılan yazıcısı seçili açılır.",
+    "nasil": ""
+   },
+   {
+    "baslik": "Açılır listeler yazıya göre genişliyor",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Başlık süzgeci, açılır listeler ve yazarken çıkan öneriler en uzun yazıya göre genişler, kısa listede dar kalır. Yazılar kesilmez, yan kaydırma çubuğu çıkmaz.",
+    "nasil": ""
+   },
+   {
+    "baslik": "Servis tablolarında başlık süzgeci",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Servis bölümündeki bütün tablolarda başlığın sağındaki ok ile değer seçilerek süzülür. Arama kutusu ve kartlarla birlikte çalışır; süzülen kişiler toplu seçime girmez.",
+    "nasil": "Servis bölümü"
+   },
+   {
+    "baslik": "Adresten Bul düzeltildi",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "İl adı yanlış yazılan adresler (ör. İstanul) artık haritada bulunuyor. Adresten Bul herkes için çalışır; konum bulunamazsa sebebini söyler.",
+    "nasil": "Servis › Personel Ulaşımı"
+   },
+   {
+    "baslik": "Servis ekranından yalnız adres düzeltme",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Adresi Düzelt düğmesi artık personel kartını açmaz; yalnız adres alanlarının olduğu küçük bir pencere açar. Eski adres saklanır, tek tıkla dönülür. Servis sorumlusu düzeltince İK'ya bildirim gider. Yetki Matrisi'nde 'Adres Düzeltme' kutusu var.",
+    "nasil": "Servis › Personel Ulaşımı › Adresi Düzelt"
+   },
+   {
+    "baslik": "Bildirimler role göre süzülüyor",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Servis sorumlusu yalnız servis bildirimlerini görür. Mevzuat güncelleme duyurusu yalnız bordro ekranına girebilen rollere gelir.",
+    "nasil": ""
+   },
+   {
+    "baslik": "Temsilciler ve Kurullar ekranı yenilendi",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Ekran önce yapılacak işleri, her satırda işi başlatan düğmeyle gösterir. Her görev kendi kartında: kaç kişi gerekli, kaçı var, kurulda kim var, ne eksik. Karta tıklayınca kişiler, tarihler ve tutanaklar açılır.",
+    "nasil": "Denetim › Temsilciler ve Kurullar"
+   },
+   {
+    "baslik": "Yeni belge tasarımı: siyah-beyaz yazıcıda net",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Bütün belgeler zeminsiz, siyah çizgili yeni tasarıma geçti; fotokopi ve siyah-beyaz yazıcıda net çıkar. Metinler ve hesaplar değişmedi. Puantajda renkle gösterilen iki durum artık yıldızla gösterilir (HT*, D*).",
+    "nasil": ""
+   },
+   {
+    "baslik": "İşe dönüş eğitimi takibi",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "İş kazası ya da meslek hastalığından dönenler ve altı aydan fazla işten uzak kalanlar İSG Eğitimleri'nin Yapılacaklar listesine düşer. Eğitim 'İşe dönüş' türüyle kaydedilince listeden çıkar.",
+    "nasil": "İSG Takibi › İSG Eğitimleri"
+   },
+   {
+    "baslik": "Fesih ve istifa belgesine gerekçe",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "İhbar sihirbazına gerekçe alanı eklendi; yazılan metin fesih bildirimine ve istifa dilekçesine geçer, kayıtla saklanır.",
+    "nasil": "İhbar sihirbazı"
+   },
+   {
+    "baslik": "Giriş ve çıkış bilgi formunda yalnız yetkili imzası",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Form yalnız şirket yetkilisine imzalatıldığı için personel imzası kaldırıldı.",
+    "nasil": ""
+   },
+   {
+    "baslik": "İSG Takibi ve Denetim birbirine bağlandı",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "İSG Takibi'nde kaydedilen temel ve tekrar eğitimleri Eğitim Formları'nda hazır görünür. Eğitici ve hekim adı İSG Hizmetleri'nden gelir. Uzman ve hekim kurul evraklarına ve Temsilciler ve Kurullar ekranına kendiliğinden girer. Kurul taslağı temsilci toplantısını, muayene, eğitim ve plan durumunu kayıtlardan yazar. Geçmiş tarihli tutanakta o gün görevde olanlar çıkar, işten ayrılan üye imza listesine girmez. Yapılacaklar'da kurulun eksikleri, temsilci eğitimi ve geciken toplantı da görünür. Disiplin ve yıllık izin kurulu kayıtlıysa üyeleri evrakın imza alanına gelir. Muayene listesinde iş kazası, meslek hastalığı ya da tekrarlanan rapordan yeni dönenler çıkar; muayene çalışan talep ederse yapılır.",
+    "nasil": "İSG Takibi ve Denetim menüsü"
+   },
+   {
+    "baslik": "Bütün evraklarda imzalar sayfanın altında",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Formlar, pusulalar, fesih ve istifa yazıları, banka talimatı, icra cevabı, Word'den çıkan dilekçe ve sözleşmelerde imza alanları son sayfanın altına yerleşir. Kısa evrakta boşluk ortada kalır, imza altta durur. Kaydı olmayan aylık evraklarda 'kayıt bulunmamaktadır' yazısı sayfanın ortasında kalın basılır.",
+    "nasil": ""
+   },
+   {
+    "baslik": "Marka formu kılavuza göre yeniden hesaplanıyor",
+    "tur": "onemli",
+    "kitle": "ust",
+    "aciklama": "Çalışan sayısına hat lideri, ofis, güvenlik ve stajyer girmez. Ortalama ücret yalnız tam devamlılardan, sıradan gün PDKS'ye göre fabrikanın açık olduğu günlerden hesaplanır. Çıkışta emeklilik de sayılır. Şikâyet çizelgesi ve olay kayıtları formun ilgili satırlarını doldurur. Ayarlar'daki İdari sayılan görevler listesini kontrol edin.",
+    "nasil": "Denetim › Marka Aylık Sosyal Performans"
+   },
+   {
+    "baslik": "Denetim evrakları: şikâyet, açık kapı, ramak kala, toplantılar, eğitim, atama",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Her evrakın kendi ekranı var: kayıt, çıktı, imzalı dosya yükleme, ay ay takip. Şikâyet çizelgesinde başvuran adı yazılmaz. İSG kurulunda süre aşımı uyarısı, eğitimde saat ve sınav kuralları denetlenir, başarılılara temel eğitim belgesi çıkar. Aylık Denetim Dosyası ayın durumunu gösterir ve hepsini ZIP olarak verir.",
+    "nasil": "Denetim menüsü"
+   },
+   {
+    "baslik": "Yeni Denetim menüsü ve aylık disiplin çizelgesi",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Üst menüde Denetim açıldı; Temsilciler ve Marka formu da buraya taşındı. Yüklenen disiplin tutanağı tek onayla o ayın çizelgesine işlenir. Çizelgenin çıktısını alıp imzalatın, geri yükleyin; program her ayın durumunu izler, sonradan değişen kayıtta uyarır.",
+    "nasil": "Denetim › Aylık Disiplin Çizelgesi"
+   }
+  ]
+ },
+ {
+  "surum": "1.1.38",
+  "tarih": "2026-11-05",
+  "maddeler": [
+   {
+    "baslik": "Marka aylık formu: aylık bordro tablosu artık programdan",
+    "tur": "yeni",
+    "kitle": "ust",
+    "aciklama": "Elle hazırlanan aylık personel tablosunu program bordro ve PDKS kayıtlarından üretir: aynı sütunlar, BES ayrı sütunda. Dışarıdan Excel yüklemek gerekmez, yükleme düğmesi kaldırıldı. Tablo, kanıt dosyalarıyla birlikte tek düğmeyle hazırlanır. Bordro ve PDKS verisi eksikse tablo da eksik olur; önce uyarılara bakın.",
+    "nasil": "Mevzuat › Marka Aylık Sosyal Performans › Tablo ve Kanıt Excel'leri"
+   }
+  ]
+ },
+ {
   "surum": "1.1.37",
   "tarih": "2026-11-05",
   "maddeler": [
