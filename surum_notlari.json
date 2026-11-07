@@ -1,5 +1,109 @@
 [
  {
+  "surum": "1.1.40",
+  "tarih": "2026-11-07",
+  "maddeler": [
+   {
+    "baslik": "Birden çok bilgisayar: önce ana bilgisayarı güncelleyin",
+    "tur": "onemli",
+    "kitle": "yonetici",
+    "aciklama": "Ağ bağlantısı ve yetki denetimi yenilendi. Önce ana bilgisayarı, sonra diğer bilgisayarları güncelleyin; eski sürümdeki bilgisayar güncellenene kadar oturum açamaz, yalnız güncellemeyi alır. Kioskta kişi artık yalnız kendi kayıtlarını görür. Yetki Matrisi'nde kapalı olan işin kaydı ağdan da yazılamaz; kapatılan hücre açık oturumlarda da birkaç saniyede geçerli olur.",
+    "nasil": "Sistem › Veri ve Yedekleme › Ağ Ayarları"
+   },
+   {
+    "baslik": "Yetki Matrisi'nde yeni sütunlar ve yeni varsayılanlar",
+    "tur": "onemli",
+    "kitle": "yonetici",
+    "aciklama": "Puantaj Düzeltme ile Puantaj Onay ve Kilit ayrı sütun oldu. Firma, bölüm, banka ve vergi tanımları da matrise bağlandı. Matriste kaydı olmayan rolde bordro, disiplin ve personel havuzu bazı rollerde kapalı başlar. Matrisinizi bir kez gözden geçirin.",
+    "nasil": "Sistem › Kullanıcı ve Rol Yönetimi › Yetki Matrisi"
+   },
+   {
+    "baslik": "Muhasebe rolü bordroyu kullanabilir",
+    "tur": "onemli",
+    "kitle": "ust",
+    "aciklama": "Muhasebe, ağdaki bilgisayarda da bordro ekranını kullanır ve maaşları görür; ama yalnız o firmanın Yetki Matrisi'nde Bordro ve Finans açıksa. Program bu hücreyi kendiliğinden açmaz, grup şirkette her firma ayrı karar verir. Muhasebe kartta maaş değiştiremez; firma, vergi ve dava ekranlarına giremez.",
+    "nasil": "Sistem › Kullanıcı ve Rol Yönetimi › Yetki Matrisi › Muhasebe › Bordro ve Finans"
+   },
+   {
+    "baslik": "PDKS: basımlar sırayla giriş ve çıkış sayılır",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "Basımlar sırayla giriş, çıkış, giriş, çıkış sayılır. Tek sayıda basım eksik basımdır, siz düzeltirsiniz; tek basım saati ne olursa olsun giriştir. İlk açılışta son iki ay bu kuralla yeniden hesaplanır, onaylı ve kilitli aylar değişmez. Günlük Takip'te yeni eksik basımlar görünebilir. Fazla mesai vardiya sonrasıdır, normal mesai vardiyada tanımlı saatlerdir.",
+    "nasil": "PDKS › Günlük Takip"
+   },
+   {
+    "baslik": "Onaylı ay artık donuk",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "Onaylı puantaj ayı kilitli ay gibi yeniden hesaplanmaz; onayı kaldırmak gerekçe ister. Bordrosu onaylanan kişinin o ayı da değişmez. Onaylı bordro kendi kopyasından okunur; sonradan zam ya da düzeltme geçmiş ayı bozmaz.",
+    "nasil": "PDKS › Aylık Puantaj"
+   },
+   {
+    "baslik": "Gece vardiyası ve erken vardiya düzeltmeleri",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Gece vardiyasının sabah çıkışı ertesi güne ayrıca 'Hatalı Basım' yazmıyor. Gece yarısından önce giriş yapan erken vardiya kişisi hesaplanıyor. Gece yarısını aşan mesaide kişi tahliye listesinden düşmüyor. Toplu Giriş kaydı ve gece çıkışı artık o günü 'firmada veri var' saymıyor: arıza gününde kalan herkes devamsız görünmez.",
+    "nasil": "PDKS › Günlük Takip, Raporlar › Acil Durum / Tahliye Listesi"
+   },
+   {
+    "baslik": "Serbest zaman vardiya süresine göre düşer",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "İzin günü başına kişinin o günkü vardiya süresi düşer, arifede 13:00'e kadarki süre. Çok günlü izin her gün o gün geçerli haktan düşer. Onaylanan iznin saati sabitlenir, vardiya sonradan değişse de bakiye değişmez. Maaş okunamayan rolde hak 0 TL ile kapanmaz.",
+    "nasil": "İzin Yönetimi › Serbest Zaman"
+   },
+   {
+    "baslik": "KVKK aydınlatma metni yenilendi",
+    "tur": "onemli",
+    "kitle": "ik",
+    "aciklama": "Aydınlatma metni 2026-2 sürümü oldu: çalışanların imzası 'güncel değil' görünür, yeniden imzalatın. Biyometrik veriyle mesai takibi için Kurul'un 2026/921 sayılı kararına göre metin ve Ana Sayfa uyarısı netleştirildi. Aday başvuru formu ve saklama süresi metinleri güncellendi.",
+    "nasil": "İK › KVKK"
+   },
+   {
+    "baslik": "Yeni raporlar: kadın gece çalışması, toplu işçi çıkarma",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Kadın Çalışanlar Gece Çalışması raporu gece postası günlerini, 7,5 saat aşımını ve sağlık raporunu denetler. Toplu İşçi Çıkarma Denetimi İş Kanunu md.29 sınırını tebliğ tarihine göre sayar; ihbar ve çıkış kaydında uyarır, engellemez.",
+    "nasil": "PDKS › Raporlar"
+   },
+   {
+    "baslik": "Yeni İSG ve izin işleri",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Yıllık İSG eğitim programı ve seviye tespiti; kurul yeter sayısı, olağanüstü toplantı ve yapılamadı tutanağı; yetkili sendika işareti. Yarım Çalışma, Koruyucu Aile ve Evlat Edinme izinleri eklendi. Genç işçi ve gece postası için yeni yasal uyarılar var, ücrete etkisi yok. Elle Yıllık İzin seçeneği kalktı, kendi talebini onaylama kapalı.",
+    "nasil": "İSG Takibi, İzin Yönetimi"
+   },
+   {
+    "baslik": "Süzgeç, Excel ve yazdırma birlikte çalışır",
+    "tur": "iyilestirme",
+    "kitle": "hepsi",
+    "aciklama": "Eski listelere de başlık süzgeci geldi. Gizlenen satırlar silmeye, imzaya, zamma, panoya ve çıktıya girmez. Kuruma giden listelerde süzme açıksa 'yalnız görünenler mi, tamamı mı' diye sorulur. Tahliye listesi acil durum için hep tam çıkar. Kişi verisi içeren Excel çıktıları erişim günlüğüne yazılır.",
+    "nasil": "Her listede başlıktaki süzgeç"
+   },
+   {
+    "baslik": "Bordro hesap düzeltmeleri",
+    "tur": "iyilestirme",
+    "kitle": "maas",
+    "aciklama": "Prim günü ve eksik gün hesabı, icra matrahı (BES ve nafaka önce düşer), zamda eski ayların kilitlenmesi ve hafta tatilinin vardiyadan bulunması düzeltildi. Hafta tatili kesintisi vardiyadaki tatil gününe göre yapılır.",
+    "nasil": "Bordro ve Finans"
+   },
+   {
+    "baslik": "Belgeler düzeldi",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Word kaydında logo ve imza düzeldi, imza son sayfanın altında gövdeyle birlikte kalır. İmza gerektiren belgenin imzasız kopyası özlüğe gitmez; önizlemeden imzalı hâli yüklenir. Yıllık izin belgesi başlığı her sayfada tekrar eder. Çalışma sözleşmesindeki ücret maddesi düzeltildi.",
+    "nasil": "Belge önizleme penceresi"
+   },
+   {
+    "baslik": "Diğer düzeltmeler",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "İsimli ankette kişi bazında yanıt listesi. Grup içi nakilde önceki çalışma dönemi kıdeme geçer; şube naklinde kaza ve muayene kaydı da taşınır. Başka şirketin yedeği geri yüklenirken ayrıca sorulur. e-Vizite ekranı SGK Bildirimleri yetkisine bağlandı. Kiosk kilidinde Windows kısayolları kapalı.",
+    "nasil": ""
+   }
+  ]
+ },
+ {
   "surum": "1.1.39",
   "tarih": "2026-11-06",
   "maddeler": [
@@ -14,14 +118,14 @@
     "baslik": "Hukuki belge metinleri düzeltildi",
     "tur": "onemli",
     "kitle": "personel_disi",
-    "aciklama": "Babalık izni dilekçesi 10 gün oldu. İbraname Borçlar Kanunu md.420'ye göre yenilendi, ibra tarihi alanı eklendi. Sözleşmede arabulucu, telafi süresi, ücret ödeme ve yetkili mahkeme maddeleri düzeltildi. Disiplinde fesih ve ücret kesme kendi belgesini üretiyor, savunma süresi 3 iş günü oldu. Elle düzenlediğiniz şablonlar değiştirilmez, onları ayrıca gözden geçirin.",
-    "nasil": "Dilekçeler, Personel › Sözleşme, Disiplin"
+    "aciklama": "Babalık izni dilekçesi 10 gün oldu. İbraname Borçlar Kanunu md.420'ye göre yenilendi, ibra tarihi alanı eklendi. Sözleşmede arabulucu, telafi süresi, ücret ödeme ve yetkili mahkeme maddeleri düzeltildi. Disiplinde fesih ve ücret kesme kendi belgesini üretiyor. Elle düzenlediğiniz şablonlar değiştirilmez, onları ayrıca gözden geçirin.",
+    "nasil": "Dilekçeler, Personel Listesi › kişiye sağ tık › Sözleşme, Disiplin"
    },
    {
     "baslik": "Programda tek tip yazım",
     "tur": "iyilestirme",
     "kitle": "hepsi",
-    "aciklama": "Etiket, düğme ve sütun başlıkları Başlık Biçimi ile yazılıyor. T.C. Kimlik No, E-posta, Hak Ediş, Ad Soyad, Güzergâh, Bölüm, İK, TL ve Vazgeç her yerde aynı yazılıyor; pencere adları menüdeki adla aynı. Kanunda geçen fazla çalışma, işçi temsilcisi gibi resmî adlar belgelerde korunur.",
+    "aciklama": "Etiket, düğme ve sütun başlıkları Başlık Biçimi ile yazılıyor. T.C. Kimlik No, E-posta, Hak Ediş, Ad Soyad, Güzergâh, Bölüm, İK, TL ve Vazgeç gibi terimler tek yazıma getirildi; pencere adları menüdeki adla aynı. Kanunda geçen fazla çalışma, işçi temsilcisi gibi resmî adlar belgelerde korunur.",
     "nasil": "Bütün ekranlar"
    },
    {
@@ -50,14 +154,14 @@
     "tur": "iyilestirme",
     "kitle": "yonetici",
     "aciklama": "Bilgisayarda ikinci sabit disk varsa yedekler kendiliğinden oraya alınır, yoksa program klasöründe kalır. Kurtarma anahtarı kâğıda yazdırılabilir ya da istenen yere dosya olarak kaydedilebilir.",
-    "nasil": "Sistem › Klasör, Şifre ve Yedek Güvenliği"
+    "nasil": "Sistem › Kullanıcı ve Güvenlik › Klasör, Şifre ve Yedek Güvenliği"
    },
    {
     "baslik": "Sosyal performansta kanıt güncel veriyle",
     "tur": "iyilestirme",
     "kitle": "maas",
     "aciklama": "Onaylı ayın kanıt Excel'leri de ayın güncel verisiyle hesaplanır. Destek Belgeleri düğmesi kaldırıldı; aynı işi Tablo ve Kanıt Excel'leri görür.",
-    "nasil": "Denetim › Sosyal Performans"
+    "nasil": "Denetim › Marka Aylık Sosyal Performans"
    },
    {
     "baslik": "Denetim evraklarında tutarlılık",
@@ -77,8 +181,8 @@
     "baslik": "Sözleşmede ücret SSK maaşından geliyor",
     "tur": "yeni",
     "kitle": "maas",
-    "aciklama": "İş sözleşmesinin ücret maddesine SSK maaşı Net ya da Brüt olarak yazılır; SSK maaşı boşsa asgari ücret yazar. Çalışma yeri firmanın ilinden, Mersis No firma bilgisinden gelir. Maaş göremeyen rolde tutar boş çıkar, elle doldurulur.",
-    "nasil": "Personel › Sözleşme Yazdır"
+    "aciklama": "İş sözleşmesinin ücret maddesine SSK maaşı Net ya da Brüt olarak yazılır; SSK maaşı boşsa asgari ücret yazar. Çalışma yeri firmanın ilinden, MERSİS No firma bilgisinden gelir. Maaş göremeyen rolde tutar boş çıkar, elle doldurulur.",
+    "nasil": "Personel Listesi › kişiye sağ tık › Sözleşme"
    },
    {
     "baslik": "Yetki ve gizlilik sıkılaştırıldı",
@@ -161,7 +265,7 @@
     "baslik": "Adresten Bul düzeltildi",
     "tur": "iyilestirme",
     "kitle": "personel_disi",
-    "aciklama": "İl adı yanlış yazılan adresler (ör. İstanul) artık haritada bulunuyor. Adresten Bul herkes için çalışır; konum bulunamazsa sebebini söyler.",
+    "aciklama": "İl adı yanlış yazılan adresler (Örn: İstanul) artık haritada bulunuyor. Adresten Bul herkes için çalışır; konum bulunamazsa sebebini söyler.",
     "nasil": "Servis › Personel Ulaşımı"
    },
    {
@@ -259,7 +363,7 @@
     "tur": "yeni",
     "kitle": "ust",
     "aciklama": "Elle hazırlanan aylık personel tablosunu program bordro ve PDKS kayıtlarından üretir: aynı sütunlar, BES ayrı sütunda. Dışarıdan Excel yüklemek gerekmez, yükleme düğmesi kaldırıldı. Tablo, kanıt dosyalarıyla birlikte tek düğmeyle hazırlanır. Bordro ve PDKS verisi eksikse tablo da eksik olur; önce uyarılara bakın.",
-    "nasil": "Mevzuat › Marka Aylık Sosyal Performans › Tablo ve Kanıt Excel'leri"
+    "nasil": "Denetim › Marka Aylık Sosyal Performans › Tablo ve Kanıt Excel'leri"
    }
   ]
  },
@@ -279,7 +383,7 @@
     "tur": "yeni",
     "kitle": "ust",
     "aciklama": "Çalışan sayısı artık ay sonunda çalışan imalat personeli. Ayın bordro Excel'i yüklenebilir; hesaplar başlıklardan yeniden yapılır, BES ve benzeri kesinti hak ediş mutabakatında ayrı gösterilir. Devamsız gün, çalışma döneminde gelinmeyen her günü sayar. 'Kanıt Excel'i' her değerin kişi, gün ve hafta dökümünü üretir.",
-    "nasil": "Mevzuat › Marka Aylık Sosyal Performans"
+    "nasil": "Denetim › Marka Aylık Sosyal Performans"
    },
    {
     "baslik": "Raporlu günde çalışılan günün ücreti artık kesilmiyor",
@@ -342,7 +446,7 @@
     "baslik": "Servis çıktıları antetli",
     "tur": "iyilestirme",
     "kitle": "personel_disi",
-    "aciklama": "Şoför listeleri, servis listesi ve maliyet raporunun her sayfasında firma logosu, unvan, adres ve iletişim bilgileri yer alır. Bilgiler Firma Ayarları'ndan gelir.",
+    "aciklama": "Şoför listeleri, servis listesi ve maliyet raporunun her sayfasında firma logosu, unvan, adres ve iletişim bilgileri yer alır. Bilgiler Firma ve Ortaklık Ayarları'ndan gelir.",
     "nasil": "Servis › Servisler › Yazdır"
    },
    {
@@ -357,7 +461,7 @@
     "tur": "onemli",
     "kitle": "ust",
     "aciklama": "Firma ve banka ekranları, yedek alma, tahliye listesi ve bazı menü işlemleri artık rol kontrolünden geçer. Kurum şifrelerini yalnız maaş görme yetkisi olan roller görür. Parola değişince o kullanıcının açık oturumları kapanır. Daha önce bu ekranları açabilen bir kullanıcı yetki uyarısı alırsa rolünü kontrol edin.",
-    "nasil": "Sistem › Yetki Matrisi"
+    "nasil": "Sistem › Kullanıcı ve Güvenlik › Yetki Matrisi"
    },
    {
     "baslik": "Güncelleme ve yedek daha güvenli",
@@ -395,7 +499,7 @@
     "baslik": "'Sütunlar' menüsü ekrana sığıyor",
     "tur": "iyilestirme",
     "kitle": "hepsi",
-    "aciklama": "Sütun sayısı çok olan listelerde (ör. Personel Listesi) Sütunlar menüsünün altı ekran dışında kalıyor, son sütunlara ve 'Varsayılana Dön' düğmesine ulaşılamıyordu. Artık liste kendi içinde kayar, düğme hep görünür. Bütün liste ekranlarında geçerli."
+    "aciklama": "Sütun sayısı çok olan listelerde (Örn: Personel Listesi) Sütunlar menüsünün altı ekran dışında kalıyor, son sütunlara ve 'Varsayılana Dön' düğmesine ulaşılamıyordu. Artık liste kendi içinde kayar, düğme hep görünür. Bütün liste ekranlarında geçerli."
    },
    {
     "baslik": "Eşleştirme'de tanımsız basım silme hızlandı",
@@ -416,7 +520,7 @@
     "tur": "yeni",
     "kitle": "personel_disi",
     "aciklama": "Personel servislerinin takibi. Güzergahları kullanıcı ekler / çıkarır (firma, plaka, şoför, kapasite, saatler). Personel servise ve durağa tarihli atanır, değişince eski kayıt geçmişte kalır. Yeni giren personel 'atanmamış' uyarısıyla çıkar, servis kullanmayan nedeniyle (şirket aracı, kendi aracı, yol parası) 'Kullanmıyor' işaretlenir, ayrılan listeden düşer. Servis Çizelgesi (kim hangi serviste), şoför listeleri (personel telefonu ve bölüm isteğe bağlı) ve aylık maliyet (güzergah, firma, bölüm; ek sefer; KDV) Excel / PDF alınır. Excel'den toplu aktarım vardır. Yeni 'Servis Sorumlusu' rolü yalnız bu modülü görür, yetkiler Yetki Matrisi'nden değiştirilebilir. Bordroya bağlı değildir.",
-    "nasil": "İK › Servis Takip"
+    "nasil": "Servis"
    },
    {
     "baslik": "Günlük Takip'te sağ panel doğru kişiyi gösterir",
@@ -448,7 +552,7 @@
     "baslik": "Eşleştirme: deneme / gereksiz numaraların tanımsız basımlarını silme",
     "tur": "yeni",
     "kitle": "personel_disi",
-    "aciklama": "Personele bağlı olmayan numaraları (ör. deneme için açılan 9999) seçip tanımsız basımlarını programdan silebilirsiniz; birden çok satır seçilebilir. Yalnız bu programın kayıtları silinir: cihaza bağlanılmaz, cihazdaki kullanıcı / basımlar ve diğer programın dosyaları olduğu gibi kalır. 'Yok say' işaretliyse numara cihazda durduğu hâlde sonraki çekimlerde basımları alınmaz; 'Yok sayılanlar' süzgecinden geri açılabilir. Yönetici / İ.K. Müdürü; İşlem Geçmişi'ne yazılır.",
+    "aciklama": "Personele bağlı olmayan numaraları (Örn: deneme için açılan 9999) seçip tanımsız basımlarını programdan silebilirsiniz; birden çok satır seçilebilir. Yalnız bu programın kayıtları silinir: cihaza bağlanılmaz, cihazdaki kullanıcı / basımlar ve diğer programın dosyaları olduğu gibi kalır. 'Yok say' işaretliyse numara cihazda durduğu hâlde sonraki çekimlerde basımları alınmaz; 'Yok sayılanlar' süzgecinden geri açılabilir. Yönetici / İ.K. Müdürü; İşlem Geçmişi'ne yazılır.",
     "nasil": "PDKS Ayarları › Cihazlar ve Ham Veri › Eşleştirme › numaraları seçin › sağ tık › Tanımsız Basımları Sil"
    }
   ]
@@ -461,7 +565,7 @@
     "baslik": "Personel listesinde 'Dönem (Bordro Ayı)' görünümü - bordroyla birebir liste",
     "tur": "yeni",
     "kitle": "personel_disi",
-    "aciklama": "Bir ayı seçin (ör. Şubat 2026): o ay en az bir gün çalışan herkes tek listede görünür - bordroyla aynı ölçüt, aynı kişiler. 'Dönem Durumu' sütunu tüm ay çalışanı, ay içinde gireni / çıkanı tarihiyle; 'Bordroda' sütunu onaylı bordroda olup olmadığını yazar. Üstte ay başı, giren, çıkan, ay sonu ve bordrodaki kişi sayısı; onaylı bordroda olup listede olmayan (kartı silinmiş / tarihi değişmiş) kişi varsa uyarı. Arama, süzgeç, Excel ve yazdır bu görünümde de çalışır.",
+    "aciklama": "Bir ayı seçin (Örn: Şubat 2026): o ay en az bir gün çalışan herkes tek listede görünür - bordroyla aynı ölçüt, aynı kişiler. 'Dönem Durumu' sütunu tüm ay çalışanı, ay içinde gireni / çıkanı tarihiyle; 'Bordroda' sütunu onaylı bordroda olup olmadığını yazar. Üstte ay başı, giren, çıkan, ay sonu ve bordrodaki kişi sayısı; onaylı bordroda olup listede olmayan (kartı silinmiş / tarihi değişmiş) kişi varsa uyarı. Arama, süzgeç, Excel ve yazdır bu görünümde de çalışır.",
     "nasil": "Personel Listesi › Görünüm: 📅 Dönem (Bordro Ayı) › Yıl / Ay seçin",
     "hedef": "sayfa:personel",
     "menu": "Personel Listesi"
@@ -476,7 +580,7 @@
     "baslik": "Mükerrer (çift) personel kartını birleştirme",
     "tur": "yeni",
     "kitle": "personel_disi",
-    "aciklama": "Aynı kişinin aynı çalışma dönemi için iki kartı varsa, çalışma izi olduğu için kopya kart yasal saklama süresi nedeniyle silinemiyordu. Artık kişiye sağ tık › 'Mükerrer Kartı Birleştir': kalacak kartı seçersiniz, kopyadaki tüm kayıtlar (PDKS basımları, izin, bordro, evrak, zimmet...) kalan karta taşınır, kalan kartta boş olan bilgiler (ör. PDKS no) kopyadan doldurulur ve boşalan kopya silinir; hiçbir kayıt kaybolmaz. Ayrı çalışma dönemleri ve iki kartta da aynı aya ait bordro / ödeme varsa birleştirilmez; kartların durumu farklıysa (Aktif / Ayrıldı, SGK çıkış bildirimi) uyarılır. Yönetici / İ.K. Müdürü.",
+    "aciklama": "Aynı kişinin aynı çalışma dönemi için iki kartı varsa, çalışma izi olduğu için kopya kart yasal saklama süresi nedeniyle silinemiyordu. Artık kişiye sağ tık › 'Mükerrer Kartı Birleştir': kalacak kartı seçersiniz, kopyadaki tüm kayıtlar (PDKS basımları, izin, bordro, evrak, zimmet...) kalan karta taşınır, kalan kartta boş olan bilgiler (Örn: PDKS no) kopyadan doldurulur ve boşalan kopya silinir; hiçbir kayıt kaybolmaz. Ayrı çalışma dönemleri ve iki kartta da aynı aya ait bordro / ödeme varsa birleştirilmez; kartların durumu farklıysa (Aktif / Ayrıldı, SGK çıkış bildirimi) uyarılır. Yönetici / İ.K. Müdürü.",
     "nasil": "Personel Listesi › kişiye sağ tık › Mükerrer Kartı Birleştir"
    },
    {
@@ -561,14 +665,14 @@
     "baslik": "Özlük dosyasından çıkış + çıkış nedeni",
     "tur": "yeni",
     "kitle": "personel_disi",
-    "aciklama": "Personel kartındaki Görev bölümüne 'Çıkış nedeni' (SGK çıkış kodu) eklendi. Aktif personele çıkış tarihi ve nedeni yazılıp KAYDET'e basılınca sağ tık › Çıkış İşlemi ile aynı işlem yapılır: onay, açık zimmet / icra / izin kontrolü, 'Ayrıldı', çıkış görev listesi, izin ücreti / tazminat önerileri. Ayrılan kişide tarih ve neden düzeltilebilir. (Yönetici / İ.K. Müdürü)",
+    "aciklama": "Personel kartındaki Görev bölümüne 'Çıkış nedeni' (SGK çıkış kodu) eklendi. Aktif personele çıkış tarihi ve nedeni yazılıp KAYDET'e basılınca sağ tık › SGK Çıkışı Yap ile aynı işlem yapılır: onay, açık zimmet / icra / izin kontrolü, 'Ayrıldı', çıkış görev listesi, izin ücreti / tazminat önerileri. Ayrılan kişide tarih ve neden düzeltilebilir. (Yönetici / İ.K. Müdürü)",
     "nasil": "Personel kartı › Görev › Çıkış tarihi + Çıkış nedeni › KAYDET"
    },
    {
     "baslik": "Giriş / çıkış tarihi hızlı düzenleme (F2)",
     "tur": "yeni",
     "kitle": "personel_disi",
-    "aciklama": "Personel listesinde Giriş Tarihi ve Çıkış Tarihi sütunları F2 ile düzenlenebilir, Excel'den sütun olarak yapıştırılabilir (Ctrl+V), Ctrl+Z ile geri alınır. Çıkış tarihi yalnız ayrılan kişide düzeltilir (çıkış yaptırmak için Çıkış İşlemi, geri almak için Çıkışı İptal Et). SGK'ya bildirge verilmişse ve kapalı dönem varsa uyarılır; PDKS günleri yeniden hesaplanır.",
+    "aciklama": "Personel listesinde Giriş Tarihi ve Çıkış Tarihi sütunları F2 ile düzenlenebilir, Excel'den sütun olarak yapıştırılabilir (Ctrl+V), Ctrl+Z ile geri alınır. Çıkış tarihi yalnız ayrılan kişide düzeltilir (çıkış yaptırmak için SGK Çıkışı Yap, geri almak için Çıkışı İptal Et). SGK'ya bildirge verilmişse ve kapalı dönem varsa uyarılır; PDKS günleri yeniden hesaplanır.",
     "nasil": "Personel Listesi › tarih hücresi › F2"
    },
    {
@@ -588,7 +692,7 @@
     "tur": "yeni",
     "kitle": "personel_disi",
     "aciklama": "Personel listesinde ayrılan kişiye sağ tık › 'Çıkışı İptal Et': kişi yeniden Aktif olur; çıkış tarihi / kodu temizlenir, çıkışla eklenen taslak izin ücreti / kıdem / ihbar kalemleri ve çıkış görev listesi silinir, PDKS günleri yeniden hesaplanır. Onaylı bordro kalemi ve SGK'ya verilmiş işten ayrılış bildirgesi varsa uyarılır (bildirge SGK'da ayrıca iptal edilmelidir). Personel kartında çıkış tarihi silinince de iptal sorulur - önceden kişi tarihsiz 'Ayrıldı' kalıyor, aktif listeye dönmüyordu.",
-    "nasil": "Personel › Çıkanlar görünümü › kişiye sağ tık › Çıkışı İptal Et.",
+    "nasil": "Personel Listesi › Görünüm › Çıkanlar (Arşiv) › kişiye sağ tık › Çıkışı İptal Et.",
     "hedef": "",
     "menu": ""
    },
@@ -606,7 +710,7 @@
     "tur": "yeni",
     "kitle": "personel_disi",
     "aciklama": "Markanın tedarikçi portalındaki aylık sosyal veri formu: işçi profili, istifa (çıkış koduna göre), ücret ortalamaları ve toplamları (resmi bordro / gerçek ödenen - portala hangisinin gideceğini siz seçersiniz), çalışma saatleri ve haftalık 60/72/90 saat aşımı (PDKS), devamsızlık, eğitim, iş kazası. Program hesaplayamadıkları (şikâyetler, temsilciler, terfi) 'Yapılacaklar'da elle girilir. Ay onaylanınca değerler donar; portalın Excel şablonu tek tuşla doldurulur, ücret / puantaj / kaza / ayrılanlar destek belgeleri üretilir. Ocak'tan bu yana her ay seçilebilir.",
-    "nasil": "Mevzuat › Marka Aylık Sosyal Performans (denetim).",
+    "nasil": "Denetim › Marka Aylık Sosyal Performans (denetim).",
     "hedef": "eylem:_sosyal_performans",
     "menu": "Marka Aylık Sosyal Performans"
    },
@@ -615,7 +719,7 @@
     "tur": "yeni",
     "kitle": "personel_disi",
     "aciklama": "Seçilen / atanan görevliler tek yerde: işçi temsilcisi, İSG çalışan temsilcisi, sendika temsilcisi, İSG / disiplin / yıllık izin kurulu, şikâyet ve diğer komiteler, acil durum ekipleri (İSG'deki ekipler buraya taşındı, İSG ekranı aynen çalışır). Yasal sayı kontrolü (6331 md.20 temsilci sayısı, 50+ çalışanda İSG kurulu, 100+ işçide izin kurulu), işten ayrılan üye, süresi dolan görev ve ilk yardım sertifikası 'Yapılacaklar'da. Görev bitince kayıt silinmez; tutanak kişinin özlüğüne konur, kişi kartında 'Görevler' sekmesinde görünür. Marka formundaki seçilmiş temsilci sayıları buradan gelir. Kurumsal belgeler: seçim duyurusu, oy pusulası, seçim tutanağı (seçilenler tek tuşla görevlendirilir), kişiye görevlendirme yazısı (özlüğe), kurul oluşturma kararı, toplantı tutanağı, pano ilanı, acil durum ekip listesi ve bölüm bölüm Türkçe / İngilizce genel rapor.",
-    "nasil": "Mevzuat › Temsilciler ve Kurullar.",
+    "nasil": "Denetim › Temsilciler ve Kurullar.",
     "hedef": "eylem:_temsilciler",
     "menu": "Temsilciler ve Kurullar"
    }
@@ -638,7 +742,7 @@
     "baslik": "PDKS: diğer programın yedek klasörü otomatik okunur",
     "tur": "iyilestirme",
     "kitle": "personel_disi",
-    "aciklama": "Cihazları başka bir PDKS programı da okuyorsa ve verileri onun yedek (Backup) klasöründen alıyorsanız: 'Dosya ile' tanımlı ve 'başka program da okuyor' işaretli cihaz artık Tümünü Çek'e ve otomatik çekime girer, klasörün son 3 gününü okur (önceden yalnız elle 'Klasörden Aktar' ile geliyordu). Klasördeki uzantısız günlük dosyalar (ör. '2026-11-03') da okunur. Cihazlara hiç bağlanılmaz.",
+    "aciklama": "Cihazları başka bir PDKS programı da okuyorsa ve verileri onun yedek (Backup) klasöründen alıyorsanız: 'Dosya ile' tanımlı ve 'başka program da okuyor' işaretli cihaz artık Tümünü Çek'e ve otomatik çekime girer, klasörün son 3 gününü okur (önceden yalnız elle 'Klasörden Aktar' ile geliyordu). Klasördeki uzantısız günlük dosyalar (Örn: '2026-11-03') da okunur. Cihazlara hiç bağlanılmaz.",
     "nasil": "PDKS Ayarları › Cihazlar › Otomatik çekim süresini seçin.",
     "hedef": "",
     "menu": ""
@@ -648,7 +752,7 @@
     "tur": "iyilestirme",
     "kitle": "personel_disi",
     "aciklama": "Toplu Bilgi Güncelleme'de 'Sadece boş alanları doldur' kapalıyken Excel'deki PDKS numaraları esas alınır: numara yanlışlıkla başkasındaysa artık atlanmaz; dosyada olmayan kişinin hatalı numarası boşaltılıp bildirilir. Numarası değişen kişinin eski (hatalı) numarayla aldığı basımlar geri alınır ve doğru kişiye taşınır, günler yeniden hesaplanır (kilitli aylara dokunulmaz). Yeni personel kartında PDKS numarası artık kendiliğinden verilmez - cihazdaki numara yazılır.",
-    "nasil": "Personel › Toplu Bilgi Güncelleme › yalnız 'PDKS Sicil No' seçili › Excel'den İçe Aktar.",
+    "nasil": "İK › Toplu Bilgi Güncelleme › yalnız 'PDKS Sicil No' seçili › Excel'den İçe Aktar.",
     "hedef": "",
     "menu": ""
    },
@@ -656,7 +760,7 @@
     "baslik": "SGK güvenlik kodu penceresi her durumda görünür",
     "tur": "iyilestirme",
     "kitle": "personel_disi",
-    "aciklama": "Otomatik SGK sorgusu kodu okuyamayıp açık programa sorduğunda pencere; program simge durumundayken gizleniyor, başka bir form açıkken tıklanamıyordu - artık her şeyin üstünde açılır. Kod sorulacak açık program yokken (ör. gece) kırmızı 'kod girilemedi' bildirimi yazılmaz: sorgu bekletilir, yetkili biri programı açınca kendiliğinden yeniden denenir. Birine sorulup girilmezse bildirimde kime sorulduğu yazar.",
+    "aciklama": "Otomatik SGK sorgusu kodu okuyamayıp açık programa sorduğunda pencere; program simge durumundayken gizleniyor, başka bir form açıkken tıklanamıyordu - artık her şeyin üstünde açılır. Kod sorulacak açık program yokken (Örn: gece) kırmızı 'kod girilemedi' bildirimi yazılmaz: sorgu bekletilir, yetkili biri programı açınca kendiliğinden yeniden denenir. Birine sorulup girilmezse bildirimde kime sorulduğu yazar.",
     "nasil": "",
     "hedef": "",
     "menu": ""
@@ -675,7 +779,7 @@
     "tur": "iyilestirme",
     "kitle": "personel_disi",
     "aciklama": "Ağdaki bilgisayardan 'Ana Bilgisayarı Şimdi Güncelle' istendiğinde ana bilgisayarda program açıksa bu artık baştan söylenir: güncelleme indirilir, ana bilgisayardaki programda 'Güncelleme Hazır' sorusu çıkar; 'Şimdi Kur' ya da programı kapatmak kurulumu başlatır.",
-    "nasil": "Sistem › Güncelleme (ağdaki bilgisayar).",
+    "nasil": "Sistem › Destek, Lisans ve Güncelleme › Güncellemeleri Kontrol Et (ağdaki bilgisayar).",
     "hedef": "",
     "menu": ""
    }
@@ -794,7 +898,7 @@
     "baslik": "Küçük pencerelerde gereksiz kaydırma çubuğu yok",
     "tur": "iyilestirme",
     "kitle": "hepsi",
-    "aciklama": "Form pencereleri (ör. işe alım onayı) açılırken içeriğin gerçek yüksekliğine göre ekrana sığdığı kadar büyür; içerik sığıyorsa kaydırma çubuğu çıkmaz.",
+    "aciklama": "Form pencereleri (Örn: işe alım onayı) açılırken içeriğin gerçek yüksekliğine göre ekrana sığdığı kadar büyür; içerik sığıyorsa kaydırma çubuğu çıkmaz.",
     "nasil": "",
     "hedef": "",
     "menu": ""
@@ -813,7 +917,7 @@
     "tur": "iyilestirme",
     "kitle": "personel_disi",
     "aciklama": "Sihirbaz yalnız ihbar süresi / tazminat bakmak için de kullanıldığından imzasız 'İstifa Dilekçesi Örneği' artık özlüğe kaydedilmez (imzalı dilekçe Akıllı Yükle ile eklenir); fesih bildirimi ve çalışma belgesinde özlüğe kaydedilsin mi diye sorulur. İş arama izni formu istifada artık 'istifa dilekçemle ... feshettiğimden' yazar (eskiden 'tarafıma tebliğ edilmiştir' diyordu).",
-    "nasil": "İK › İhbar / Fesih Sihirbazı.",
+    "nasil": "Hukuk › İhbar Bildirimleri.",
     "hedef": "",
     "menu": ""
    },
@@ -845,7 +949,7 @@
     "baslik": "Ana sayfa uyarısından açılan ekranda yalnız uyarıdaki kişiler",
     "tur": "iyilestirme",
     "kitle": "hepsi",
-    "aciklama": "Uyarılar kartında bir uyarıya (ör. '1 kişinin vardiyası atanmamış', muayenesi eksikler, izin bakiyesi yüksekler) tıklayınca açılan ekranın listesinde yalnız o uyarının kapsadığı kişiler görünür. Listenin altındaki 'Tümünü göster' ile bütün liste geri gelir.",
+    "aciklama": "Uyarılar kartında bir uyarıya (Örn: '1 kişinin vardiyası atanmamış', muayenesi eksikler, izin bakiyesi yüksekler) tıklayınca açılan ekranın listesinde yalnız o uyarının kapsadığı kişiler görünür. Listenin altındaki 'Tümünü göster' ile bütün liste geri gelir.",
     "nasil": "Ana Sayfa › Uyarılar › uyarıya tıklayın.",
     "hedef": "",
     "menu": ""
@@ -881,7 +985,7 @@
     "baslik": "SGK'da iptal edilen bildirge artık 'tarih farklı' uyarısı vermiyor",
     "tur": "iyilestirme",
     "kitle": "personel_disi",
-    "aciklama": "İşe giriş SGK'da iptal edilip yeni tarihle yeniden verildiğinde (ör. 29.09 iptal, 01.10 yeni) eski bildirge her otomatik sorguda 'işe giriş tarihi SGK'dakinden farklı' bildirimi üretiyordu. Artık iptal bilinen bildirge hep iptal sayılır; kart tarihiyle birebir tutan geçerli bildirge varsa eski tarihli için uyarı çıkmaz; gerçek tarih farkı bildirimi de yalnız bir kez gelir (sürdükçe SGK Bildirimleri › Yapılacaklar'da görünür).",
+    "aciklama": "İşe giriş SGK'da iptal edilip yeni tarihle yeniden verildiğinde (Örn: 29.09 iptal, 01.10 yeni) eski bildirge her otomatik sorguda 'işe giriş tarihi SGK'dakinden farklı' bildirimi üretiyordu. Artık iptal bilinen bildirge hep iptal sayılır; kart tarihiyle birebir tutan geçerli bildirge varsa eski tarihli için uyarı çıkmaz; gerçek tarih farkı bildirimi de yalnız bir kez gelir (sürdükçe SGK Bildirimleri › Yapılacaklar'da görünür).",
     "nasil": "",
     "hedef": "",
     "menu": ""
@@ -899,7 +1003,7 @@
     "baslik": "e-Vizite Yapılacaklar'da 'Listeden Kaldır'",
     "tur": "yeni",
     "kitle": "personel_disi",
-    "aciklama": "Yapılacak bir şey kalmayan raporu (ör. programda kaydı olmayan eski çalışanın raporu) Yapılacaklar'dan kaldırabilirsiniz; sonraki SGK okumalarında yeniden gelmez, 'Tüm raporlar' sekmesinde kalır.",
+    "aciklama": "Yapılacak bir şey kalmayan raporu (Örn: programda kaydı olmayan eski çalışanın raporu) Yapılacaklar'dan kaldırabilirsiniz; sonraki SGK okumalarında yeniden gelmez, 'Tüm raporlar' sekmesinde kalır.",
     "nasil": "e-Vizite › Yapılacaklar › satırı seçin › 'Listeden Kaldır' (ya da Delete / sağ tık). Geri getirmek: sağ tık › Kaldırılanları Geri Getir.",
     "hedef": "eylem:_vizite",
     "menu": ""
@@ -914,7 +1018,7 @@
     "baslik": "e-Vizite: T.C. ile arama artık yarıda kalmıyor, sonucu görünüyor",
     "tur": "iyilestirme",
     "kitle": "personel_disi",
-    "aciklama": "Başka bir programın okuyup kapattığı raporları bulan T.C. ile aramada SGK bir çalışan için hata kodu döndürünce (ör. kaydı yok) bütün arama sessizce duruyordu. Artık arama sürer; kaç kişi arandığı, SGK'da kaç rapor bulunduğu ve kaçının yeni eklendiği e-Vizite ekranının üstünde ve sistem kayıtlarında görünür.",
+    "aciklama": "Başka bir programın okuyup kapattığı raporları bulan T.C. ile aramada SGK bir çalışan için hata kodu döndürünce (Örn: kaydı yok) bütün arama sessizce duruyordu. Artık arama sürer; kaç kişi arandığı, SGK'da kaç rapor bulunduğu ve kaçının yeni eklendiği e-Vizite ekranının üstünde ve sistem kayıtlarında görünür.",
     "nasil": "e-Vizite ekranında sağ tık › 'Bir Çalışanı SGK'da T.C. ile Ara…' ile tek kişinin SGK'daki raporlarını görün; 'Tüm Çalışanları T.C. ile Yeniden Ara' aramayı hemen tekrarlar.",
     "hedef": "eylem:_vizite",
     "menu": ""
@@ -930,7 +1034,7 @@
     "tur": "iyilestirme",
     "kitle": "personel_disi",
     "aciklama": "90 günden uzun tarih aralığında sorulan 'PDF'siz, yalnız liste okunsun mu?' sorusunda 'Evet' işlemi onaylamak sanılıyor ve 'PDF'leri de indir' işareti kalkıyordu; PDF'ler inmiyordu. Soru artık açık adlı düğmelerle soruluyor: 'PDF'lerle Oku' (varsayılan), 'Yalnız Listeyi Oku', 'Vazgeç'. İnmemiş PDF'ler için aynı tarih aralığını yeniden okumak yeterli - daha önce inmiş olanlar tekrar istenmez.",
-    "nasil": "Personel › SGK İşe Giriş / Ayrılış Bildirimleri › SGK'dan Güncelle.",
+    "nasil": "Mevzuat › SGK İşe Giriş / Ayrılış Bildirimleri › SGK'dan Güncelle.",
     "hedef": "",
     "menu": ""
    },
@@ -947,7 +1051,7 @@
     "baslik": "e-Vizite: elle girilen rapor izni eşleşir, 'İzne Aktar' ne yapacağını söyler",
     "tur": "iyilestirme",
     "kitle": "personel_disi",
-    "aciklama": "Elle girilmiş rapor izni SGK raporunu kapsıyorsa rapor o izinle eşleşir ve 'Programda var' olur (adında rapor / hastalık / istirahat geçen özel izin türleri de sayılır). Tarihler tutmuyorsa ekranda neyin farklı olduğu yazar (ör. 'programda elle girilmiş rapor izni 04.09-02.10, SGK'da 04.09-03.10'); 'İzne Aktar' onayınızla izni SGK'daki tarihlere göre yeniler. Raporun tarihlerine yıllık izin gibi başka bir izin düşüyorsa hangisi olduğu yazar ve o izne dokunulmaz. Önceden bu durumlarda 'İzne Aktar' yalnız 'başka izin kaydı var' diyordu.",
+    "aciklama": "Elle girilmiş rapor izni SGK raporunu kapsıyorsa rapor o izinle eşleşir ve 'Programda var' olur (adında rapor / hastalık / istirahat geçen özel izin türleri de sayılır). Tarihler tutmuyorsa ekranda neyin farklı olduğu yazar (Örn: 'programda elle girilmiş rapor izni 04.09-02.10, SGK'da 04.09-03.10'); 'İzne Aktar' onayınızla izni SGK'daki tarihlere göre yeniler. Raporun tarihlerine yıllık izin gibi başka bir izin düşüyorsa hangisi olduğu yazar ve o izne dokunulmaz. Önceden bu durumlarda 'İzne Aktar' yalnız 'başka izin kaydı var' diyordu.",
     "nasil": "Mevzuat › SGK e-Vizite Raporları.",
     "hedef": "",
     "menu": ""
@@ -966,7 +1070,7 @@
     "tur": "yeni",
     "kitle": "personel_disi",
     "aciklama": "İşe Giriş / Çıkış Görevleri artık yalnız son girenleri değil, eksik bilgisi olan bütün aktif çalışanları gösterir (en çok eksiği olan üstte): IBAN, SGK bildirgesi, sözleşme, KVKK metni, muayene, İSG eğitimi, KKD, PDKS kartı, vardiya, kiosk PIN'i, özlük. Bilgi özlükten ya da karttan girildikçe kendiliğinden tamamlanır; gerekmeyen için 'Gerek Yok'. Eski çalışanlara görev listesi açılmaz (oryantasyon gibi elle işaretlenen görevler yalnız yeni girişte). Ekran yan yana düzenlendi: solda kişiler, sağda görevleri. 'Görevlere Göre' sekmesi de varsayılan olarak bütün çalışanları tarar.",
-    "nasil": "Personel › İşe Giriş / Çıkış Görevleri.",
+    "nasil": "İK › İşe Giriş / Çıkış Görevleri.",
     "hedef": "",
     "menu": ""
    },
@@ -984,7 +1088,7 @@
     "tur": "yeni",
     "kitle": "maas",
     "aciklama": "Toplu Kesinti ve Toplu Ek Ödeme ekranlarına '🖨 Çıktı' düğmesi: kaydetmeden önce kontrol için görünen ve tutarı girilmiş satırlar Excel'e ya da PDF / yazıcıya alınır. Excel'de tutarlar sayı ve ₺ biçimli (Excel'de toplanabilir), bölüm bölüm ara toplamlar ve genel toplam (gruplar kenardan kapatılabilir) ve ikinci sayfada süzgeçli Excel tablosu. Avans çıktısı ara toplamsız, ada göre alfabetik tek liste ve genel toplamla gelir. Kaydedilmemiş değişiklik varsa çıktının başında yazar.",
-    "nasil": "Finans › Avans / Prim › Toplu Kesinti ya da Toplu Ek Ödeme › Çıktı.",
+    "nasil": "Finans › Avans, Prim ve Kesinti Yönetimi › Toplu Kesinti ya da Toplu Ek Ödeme › Çıktı.",
     "hedef": "",
     "menu": ""
    },
@@ -1020,7 +1124,7 @@
     "tur": "yeni",
     "kitle": "personel_disi",
     "aciklama": "Yanlış eşleşen ya da işi yapılmış bir satır 'Listeden Kaldır' düğmesi, Delete tuşu ya da sağ tıkla kaldırılır; sonraki SGK okumalarında yeniden gelmez. İnen PDF'ler, özlük evrakı ve personel kartı değişmez. Boş alana sağ tık › 'Kaldırılanları Geri Getir' ile hepsi geri alınır.",
-    "nasil": "Personel › SGK İşe Giriş / Ayrılış Bildirimleri › Yapılacaklar.",
+    "nasil": "Mevzuat › SGK İşe Giriş / Ayrılış Bildirimleri › Yapılacaklar.",
     "hedef": "",
     "menu": ""
    }
@@ -1044,7 +1148,7 @@
     "tur": "iyilestirme",
     "kitle": "ust",
     "aciklama": "Ana bilgisayar yeni sürümü gündüz sessizce indirir ama kurmaz; gece (varsayılan 03:00-05:00) kimse bağlı değilken kurar. Gece kapalı kalırsa sabah açılışta, kimse bağlanmadan kurar. Ana bilgisayarda program penceresi açıksa 'Şimdi Kur / 1 Saat Sonra' diye sorar.",
-    "nasil": "Saat ve açma-kapama: ana bilgisayarda Sistem › Ağ Ayarları.",
+    "nasil": "Saat ve açma-kapama: ana bilgisayarda Sistem › Veri ve Yedekleme › Ağ Ayarları.",
     "hedef": "",
     "menu": ""
    },
@@ -1052,8 +1156,8 @@
     "baslik": "Meslek kodu ve öğrenim durumu bildirgeden gelir",
     "tur": "yeni",
     "kitle": "personel_disi",
-    "aciklama": "SGK'dan çekilen işe giriş bildirgesindeki meslek kodu (ör. 7533.02) ve öğrenim durumu, personel kartında boşsa kendiliğinden yazılır; daha önce inmiş bildirgeler de bir kez taranır. Kartta dolu olan bilgi değiştirilmez. Bildirgesi henüz inmemiş kişiler için SGK'dan Çek'te 'PDF'leri de indir' işaretli olmalı.",
-    "nasil": "Personel › SGK İşe Giriş / Ayrılış Bildirimleri › SGK'dan Çek.",
+    "aciklama": "SGK'dan çekilen işe giriş bildirgesindeki meslek kodu (Örn: 7533.02) ve öğrenim durumu, personel kartında boşsa kendiliğinden yazılır; daha önce inmiş bildirgeler de bir kez taranır. Kartta dolu olan bilgi değiştirilmez. Bildirgesi henüz inmemiş kişiler için SGK'dan Güncelle'de 'PDF'leri de indir' işaretli olmalı.",
+    "nasil": "Mevzuat › SGK İşe Giriş / Ayrılış Bildirimleri › SGK'dan Güncelle.",
     "hedef": "",
     "menu": ""
    },
@@ -1080,7 +1184,7 @@
     "tur": "yeni",
     "kitle": "personel_disi",
     "aciklama": "İşe Giriş / Çıkış Görevleri'nde yeni 'Görevlere Göre' sekmesi: her görevde bekleyen kişiler. Görevin amacına göre hazır sütunlu liste yazdırılır ya da Excel'e aktarılır - IBAN'ı olmayanlar için banka hesap açılış listesi (T.C., doğum yeri / tarihi, anne-baba adı, telefon, adres), İSG eğitimi katılımcı listesi (imza sütunlu), işe giriş muayenesi listesi, KKD teslim listesi ve diğerleri. 'Tüm aktif çalışanları tara' işaretlenirse görev listesi olmayan eski çalışanlar da taranır. Üstte sayaç kartları ve sorumlu süzgeci.",
-    "nasil": "Personel › İşe Giriş / Çıkış Görevleri › Görevlere Göre.",
+    "nasil": "İK › İşe Giriş / Çıkış Görevleri › Görevlere Göre.",
     "hedef": "",
     "menu": ""
    },
@@ -1098,7 +1202,7 @@
     "tur": "yeni",
     "kitle": "personel_disi",
     "aciklama": "SGK'ya bildirilmiş yeni işe girişler, bildirgesi açılıp bakılana kadar 'Yeni Girişler' sekmesinde durur; çift tıkla bildirge açılınca kişi Geçmiş'e geçer. Toplu kontrol edilenler sağ tıkla topluca Geçmiş'e aktarılabilir.",
-    "nasil": "Personel › SGK İşe Giriş / Ayrılış Bildirimleri › Yeni Girişler.",
+    "nasil": "Mevzuat › SGK İşe Giriş / Ayrılış Bildirimleri › Yeni Girişler.",
     "hedef": "",
     "menu": ""
    },
@@ -1107,7 +1211,7 @@
     "tur": "iyilestirme",
     "kitle": "personel_disi",
     "aciklama": "Bir kişi için SGK'da iki ayrı işe giriş (ya da ayrılış) bildirgesi varsa, kart tarihi hangisine göre girilirse girilsin öteki 'tarihi hatalı' diye gösterilmiyordu; artık 'SGK'da 2. işe giriş bildirgesi' olarak gösterilir. Yanlış olan bildirgenin SGK'da iptal ettirilmesi gerekir; çift tıkla uyarı kapatılabilir, kart değişmez.",
-    "nasil": "Personel › SGK İşe Giriş / Ayrılış Bildirimleri › Yapılacaklar.",
+    "nasil": "Mevzuat › SGK İşe Giriş / Ayrılış Bildirimleri › Yapılacaklar.",
     "hedef": "",
     "menu": ""
    },
@@ -1125,7 +1229,7 @@
     "tur": "yeni",
     "kitle": "maas",
     "aciklama": "Kıdem / İhbar ekranında 'Toplu Hesap' sekmesi: mevcut çalışanların seçilen tarihte işten çıkarılsalar doğacak kıdem, ihbar ve kullanılmayan izin yükü (brüt) - özet kartları, bölüm süzgeci, en yüksek üstte liste, Excel ve yazıcı çıktısı. 'Kişi Hesabı' artık çalışanlarla açılır; çalışan için 'bugün çıksa' hesabı yapılır (ayrılanlar kutu işaretlenince gelir).",
-    "nasil": "İK › Kıdem / İhbar Tazminatı (Kişi ve Toplu Hesap).",
+    "nasil": "Hukuk › Kıdem / İhbar Tazminatı (Kişi ve Toplu Hesap).",
     "hedef": "eylem:_tazminat_hesabi",
     "menu": "Kıdem / İhbar Tazminatı (Kişi ve Toplu Hesap)"
    },
@@ -1143,7 +1247,7 @@
     "tur": "onemli",
     "kitle": "personel_disi",
     "aciklama": "SGK'da işten ayrılışı bildirilmiş ama kartı hâlâ aktif olanlar, eski kartında SGK'da yeni işe girişi görünenler ve giriş / çıkış tarihi SGK'dakinden farklı olanlar 'Yapılacaklar'da listelenir; çift tık doğru ekranı açar (SGK Çıkışı Yap, Yeniden İşe Al ya da tarih düzeltme); SGK çıkışında tarih ve çıkış kodu bildirgeden dolu gelir. Listeler en yeni tarih üstte.",
-    "nasil": "Personel › SGK İşe Giriş / Ayrılış Bildirimleri › Yapılacaklar.",
+    "nasil": "Mevzuat › SGK İşe Giriş / Ayrılış Bildirimleri › Yapılacaklar.",
     "hedef": "",
     "menu": ""
    },
@@ -1176,7 +1280,7 @@
     "tur": "onemli",
     "kitle": "ust",
     "aciklama": "Ağda çalışan firmalarda ana bilgisayar (sunucu) yeni sürümü kendisi indirir, imzasını doğrular ve gece (varsayılan 03:00-05:00, kimse bağlı değilken) kurar; program penceresi açık olmasa da olur. Ana bilgisayarda program penceresi açıksa kapanınca kurulur. Kurulunca ya da kurulamazsa Yönetici'ye bildirim gelir.",
-    "nasil": "Ana bilgisayarda Sistem › Ağ Ayarları'ndan açıp kapatabilir, saatini değiştirebilirsiniz. Hemen kurmak için saatin yanındaki simgeye sağ tıklayıp 'Güncellemeyi Denetle ve Kur'.",
+    "nasil": "Ana bilgisayarda Sistem › Veri ve Yedekleme › Ağ Ayarları'ndan açıp kapatabilir, saatini değiştirebilirsiniz. Hemen kurmak için saatin yanındaki simgeye sağ tıklayıp 'Güncellemeyi Denetle ve Kur'.",
     "hedef": "",
     "menu": ""
    },
@@ -1185,7 +1289,7 @@
     "tur": "onemli",
     "kitle": "hepsi",
     "aciklama": "Ağdaki bilgisayar artık ana bilgisayardan önce güncellenmez (önceden önce güncellenen bilgisayar ana bilgisayara bağlanamıyordu). Ana bilgisayar yeni sürüme geçince ağdaki bilgisayar açılışta ya da çalışırken bunu görür ve tek tıkla aynı sürüme güncellenir.",
-    "nasil": "Yönetici beklemek istemezse ağdaki bilgisayarda Sistem › Güncelleme › 'Ana Bilgisayarı Şimdi Güncelle'.",
+    "nasil": "Yönetici beklemek istemezse ağdaki bilgisayarda Sistem › Destek, Lisans ve Güncelleme › Güncellemeleri Kontrol Et › 'Ana Bilgisayarı Şimdi Güncelle'.",
     "hedef": "",
     "menu": ""
    },
@@ -1281,7 +1385,7 @@
     "tur": "iyilestirme",
     "kitle": "hepsi",
     "aciklama": "Birden fazla satır seçilebilen bütün listelerde satır başında onay kutuları var: kutuya tıklamak satırı seçime ekler / çıkarır (Ctrl gerekmez), Shift + kutu aralık seçer. Sol üst köşedeki kutu görünen satırların tümünü seçer / bırakır. Ctrl / Shift ile seçim eskisi gibi çalışır.",
-    "nasil": "Ör. İK › Toplu Maaş Tipi Değiştirme: kutularla kişileri seçin ya da köşeden tümünü seçin.",
+    "nasil": "Örn: İK › Toplu Maaş Tipi Değiştirme: kutularla kişileri seçin ya da köşeden tümünü seçin.",
     "hedef": "",
     "menu": ""
    },
@@ -1298,7 +1402,7 @@
     "baslik": "Listeler kendiliğinden tazelenir",
     "tur": "iyilestirme",
     "kitle": "personel_disi",
-    "aciklama": "Başka ekrandan eklenen kayıt (ör. telefondan okutulan icra yazısından açılan dosya, Personel sağ tık › Kayıt Ekle ile girilen eğitim / zimmet / avans) İcra, Eğitim, Demirbaş, Avans / Prim, Performans ve Disiplin listelerinde F5'e basmadan görünür.",
+    "aciklama": "Başka ekrandan eklenen kayıt (Örn: telefondan okutulan icra yazısından açılan dosya, Personel sağ tık › Kayıt Ekle ile girilen eğitim / zimmet / avans) İcra, Eğitim, Demirbaş, Avans / Prim, Performans ve Disiplin listelerinde F5'e basmadan görünür.",
     "nasil": "",
     "hedef": "",
     "menu": ""
@@ -1353,7 +1457,7 @@
     "tur": "iyilestirme",
     "kitle": "personel_disi",
     "aciklama": "Dönem seçimi yerine başlangıç–bitiş tarihi geldi; bitiş her açılışta bugündür. SGK'dan çektikten sonra liste çekilen aralığa ayarlanır, yeni gelen bildirgeler 🆕 ile işaretlenir.",
-    "nasil": "Personel › SGK İşe Giriş / Ayrılış Bildirimleri.",
+    "nasil": "Mevzuat › SGK İşe Giriş / Ayrılış Bildirimleri.",
     "hedef": "",
     "menu": ""
    },
@@ -1404,7 +1508,7 @@
     "tur": "onemli",
     "kitle": "yonetici",
     "aciklama": "Ana bilgisayara ilk kez bağlanan bilgisayar, Yönetici onaylayana kadar bekler. Önceden bağlı bilgisayarlar etkilenmez.",
-    "nasil": "Sistem › Ağ Ayarları › Lisanslı ağ bilgisayarları › 'ONAY BEKLİYOR' satırı › Onayla.",
+    "nasil": "Sistem › Veri ve Yedekleme › Ağ Ayarları › Lisanslı ağ bilgisayarları › 'ONAY BEKLİYOR' satırı › Onayla.",
     "hedef": "eylem:_ag_ayarlari",
     "menu": ""
    },
@@ -1412,8 +1516,8 @@
     "baslik": "Yetki yalnız rolden gelir; pasif hesap, şifre sıfırlama",
     "tur": "onemli",
     "kitle": "yonetici",
-    "aciklama": "Kullanıcı adı ('admin') artık yetki vermez. Rolü boş hesaplar ilk açılışta Yönetici yapıldı (kayda geçti). Kullanıcı Yönetimi'nde hesap pasifleştirilebilir, şifre sıfırlanabilir, kullanıcının işlemleri görülebilir.",
-    "nasil": "Sistem › Kullanıcı ve Güvenlik › Kullanıcı Yönetimi › kullanıcıya sağ tık.",
+    "aciklama": "Kullanıcı adı ('admin') artık yetki vermez. Rolü boş hesaplar ilk açılışta Yönetici yapıldı (kayda geçti). Kullanıcı ve Rol Yönetimi'nde hesap pasifleştirilebilir, şifre sıfırlanabilir, kullanıcının işlemleri görülebilir.",
+    "nasil": "Sistem › Kullanıcı ve Güvenlik › Kullanıcı ve Rol Yönetimi › kullanıcıya sağ tık.",
     "hedef": "sayfa:kullanici_yonetimi",
     "menu": ""
    },
@@ -1422,7 +1526,7 @@
     "tur": "onemli",
     "kitle": "ik",
     "aciklama": "SGK'ya bildirilmiş ya da fiilen çalışmış personel, çıkışından itibaren 10 yıl dolmadan 'Tamamen Sil' ile silinemez (5510 md.86). Yanlış / mükerrer açılan kayıtlar silinebilir.",
-    "nasil": "Ayrılanlar 'İşten Çıkış' ile arşive alınır; süresi dolanlar KVKK › Saklama ve İmha'da listelenir.",
+    "nasil": "Ayrılanlar 'İşten Çıkış' ile arşive alınır; süresi dolanlar Mevzuat › KVKK Uyum Merkezi › Saklama ve İmha'da listelenir.",
     "hedef": "",
     "menu": ""
    },
@@ -1581,7 +1685,7 @@
     "tur": "yeni",
     "kitle": "maas",
     "aciklama": "Kıdem / ihbar hesap belgesi, ibraname, çıkış bordrosuna aktarım.",
-    "nasil": "Hukuk › Kıdem / İhbar Tazminatı Hesabı; ya da Personel listesinde ayrılan kişiye sağ tık.",
+    "nasil": "Hukuk › Kıdem / İhbar Tazminatı (Kişi ve Toplu Hesap); ya da Personel listesinde ayrılan kişiye sağ tık.",
     "hedef": "eylem:_tazminat_hesabi",
     "menu": "Kıdem / İhbar Tazminatı"
    },
@@ -1590,7 +1694,7 @@
     "tur": "yeni",
     "kitle": "personel_disi",
     "aciklama": "Fazla çalışma için işçinin yazılı onayı (Yönetmelik md.9) ve ay sonunda fazla mesainin onaylanması; onaylanmayan fazla mesai bordroya girmez.",
-    "nasil": "PDKS › Fazla Mesai Onayı.",
+    "nasil": "PDKS › Toplu İşlem ve Raporlar › Fazla Mesai Onayı.",
     "hedef": "sayfa:pdks",
     "menu": ""
    },
