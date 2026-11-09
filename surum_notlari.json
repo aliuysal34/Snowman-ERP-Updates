@@ -1,5 +1,93 @@
 [
  {
+  "surum": "1.1.41",
+  "tarih": "2026-11-09",
+  "maddeler": [
+   {
+    "baslik": "Yeni bordro ekranı: önce yapılacaklar",
+    "tur": "onemli",
+    "kitle": "maas",
+    "aciklama": "Bordro ekranı sadeleşti: üstte dönem, 1 Hesaplandı › 2 Kontrol › 3 Onay adımları ve duruma göre tek ana düğme (Sorunları Gider / Onay Merkezi). Yazdır, Excel, geçen ayla karşılaştırma ve diğer işler '⋯ İşlemler' menüsünde. 'Yapılacaklar' sekmesi sorunları türe göre toplar; her işin düğmesi ilgili ekranı açar. Eksik basım ya da PDKS kaydı olmayan güne çift tıklayınca Günlük Takip o günde, kişi seçili açılır. İşe giriş ve çıkış tarihleri sütun olarak eklendi. Kişiye çift tıklayınca Hesap Pusulası ya da Giriş-Çıkış ve Hesap Dökümü seçilir.",
+    "nasil": "Bordro",
+    "hedef": "sayfa:bordro",
+    "menu": "Bordro"
+   },
+   {
+    "baslik": "Maaş kilidi toplu yenilenebilir",
+    "tur": "yeni",
+    "kitle": "ust",
+    "aciklama": "Zam geç girildiyse biten ayın kilitli maaşı kartın güncel maaşıyla toplu yenilenir: yalnız kilitli maaşı karttan farklı olanlar listelenir. Onaylı bordro değişmez. Tabloda Ctrl / Shift ile birden çok kişi seçilebilir. Personel kartında ücret değişikliği ayı listeden seçilir ya da AA.YYYY olarak yazılır.",
+    "nasil": "Bordro › ⋯ İşlemler › Maaş Kilidini Güncel Maaşla Yenile"
+   },
+   {
+    "baslik": "Onay Merkezi yalnız o ay çalışanları gösterir",
+    "tur": "iyilestirme",
+    "kitle": "maas",
+    "aciklama": "SGK / Gelir Vergisi Onay Merkezi'nde seçilen ay en az bir gün çalışmış kişiler listelenir (bordro ekranıyla aynı); o ay onaylanmış kayıt her zaman görünür.",
+    "nasil": "Finans › SGK / Gelir Vergisi Onay Merkezi",
+    "hedef": "sayfa:vergi_onay"
+   },
+   {
+    "baslik": "Bordro hesap seçenekleri ve mevzuat tanımları",
+    "tur": "onemli",
+    "kitle": "ust",
+    "aciklama": "Yeni Mevzuat Tanımları ekranı: aylık parametreler, SGK belge türleri (hazine indirimi SGK tablosuna göre), ücret türleri (SGK / GV / DV, kısmi istisna), harcırah gündelikleri ve hesap seçenekleri. Hesap esası (gerçek maaş + SSK / tek bordro), fazla mesai esası (net / brüt), ilk 2 gün istirahatin ödenmesi, Cumartesi mesai çarpanı ve haftalık 45 saat yöntemi seçilebilir. Varsayılanlar bugünkü hesabı değiştirmez: fazla mesai verisi olan firmada esas 'net' kalır.",
+    "nasil": "Sistem › Mali Parametreler › Mevzuat Tanımları",
+    "hedef": "sayfa:mevzuat_tanimlari",
+    "menu": "Mevzuat Tanımları"
+   },
+   {
+    "baslik": "Bordro hesap düzeltmeleri (mali müşavir karşılaştırmasıyla)",
+    "tur": "onemli",
+    "kitle": "maas",
+    "aciklama": "Asgari ücret istisnası GV Tebliği 319'a göre: kıst ayda tam, kümülatif işe girişten. SGK işçi ve işsizlik payları ayrı yuvarlanır. 31 çeken ayda eksik günlü aylıkçının ödenen günü 'takvim günü eksi eksik gün, en çok 30' oldu (ör. Ağustos'ta 5 gün rapor: 26 gün) - açık aylarda net tutar artabilir, onaylı aylar değişmez. Yemek yardımı SGK istisnası 7577 sayılı Kanunla 17.04.2026'dan itibaren kartta ve nakitte günlük 300 TL. Personel kartına önceki işverenden devreden GV matrahı girilebilir.",
+    "nasil": "Bordro"
+   },
+   {
+    "baslik": "e-Vizite: ayrılan çalışanın raporu",
+    "tur": "onemli",
+    "kitle": "personel_disi",
+    "aciklama": "Çıkıştan sonra (ya da işe girişten önce) alınan rapor 'çalışma dönemi dışında' görünür: çalıştı / çalışmadı bildirimi ve izne aktarma yapılmaz, e-Vizite'de 'Personelim Değildir' işaretlemeniz istenir. Programın daha önce açtığı izin geri alınır (onaylı aya düşen izne dokunulmaz). Yeniden işe girişte rapor yeni karta taşınır; çıkışı aşan raporun izni çıkış gününe kırpılır.",
+    "nasil": "Mevzuat › SGK e-Vizite Raporları"
+   },
+   {
+    "baslik": "İşten ayrılanların kalan izinleri",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Yıllık İzin Bakiye Paneli'nde 'Göster: İşten Ayrılanlar (son 5 yıl)': çıkış günündeki kalan izin ve kullanılmayan izin ücretinin (İş K. md.59) ödendi / taslak / ödenmedi durumu, ödenmediyse zamanaşımı tarihi.",
+    "nasil": "İzin Yönetimi › Yıllık İzin Bakiye/Ücret Paneli"
+   },
+   {
+    "baslik": "PDKS: yeni rapor ve imzalı form",
+    "tur": "yeni",
+    "kitle": "personel_disi",
+    "aciklama": "Raporlar'a 'Elle Düzeltilen Giriş-Çıkışlar' eklendi (aylık / yıllık, Bu Ay - Geçen Ay - Bu Yıl düğmeleri). Taranmış imzalı elle kayıt formu rapordan ya da Değişiklik Geçmişi'nden kişinin özlüğüne eklenir. Rapor hazırlanırken 'İşlem sürüyor' penceresi çıkar; ekran donmaz, rapor iki kez başlatılamaz.",
+    "nasil": "PDKS › Raporlar › Elle Düzeltilen Giriş-Çıkışlar"
+   },
+   {
+    "baslik": "PDKS ekranları sadeleşti",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Günlük Takip'te düzeltme işleri tek '✎ Düzeltme' menüsünde (kısayollar E, D, G aynı). Bugün ekranında cihaz verisi gelmeyen günde Beklenen dolu kalır, 'Cihaz Verisi Yok' ayrı gösterilir; İdari / Beyaz Yaka takip dışı olarak yazılır. Günlük Gelmeyenler Listesi: başlık tek satırda, renkli tablo başlığı, Hazırlayan'da kullanıcı adı, yazdırma sırası seçimi (alfabetik, tespit, izin veren, görev).",
+    "nasil": "PDKS › Bugün, Günlük Takip"
+   },
+   {
+    "baslik": "Özlük ve izin türleri",
+    "tur": "iyilestirme",
+    "kitle": "ik",
+    "aciklama": "Özlük evrak tanımlarına 20 tür eklendi; kişi bazında 'İstenen Evraklar' işaretlenir, yüklenene kadar eksik sayılır. Şua İzni, Kısmi Süreli Çalışılmayan Gün ve Ücretli Denkleştirme İzni türleri eklendi.",
+    "nasil": "Personel kartı › Özlük Dosyası"
+   },
+   {
+    "baslik": "Diğer düzeltmeler",
+    "tur": "iyilestirme",
+    "kitle": "personel_disi",
+    "aciklama": "Bordrosu onaylı kişide puantaj düzeltmesi reddedilir, toplu işlemde atlanır. Kiosk pencereleri öne alınır. md.29 tebliğ geçerliliği dönemle sınırlandı. Ağdaki bilgisayarda bazı yetki ve kayıt denetimleri sıkılaştırıldı.",
+    "nasil": ""
+   }
+  ]
+ },
+ {
   "surum": "1.1.40",
   "tarih": "2026-11-07",
   "maddeler": [
